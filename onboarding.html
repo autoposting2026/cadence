@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadence Cohort #1 — Brand Voice Onboarding</title>
+    <meta name="description" content="Complete Step 2 of your Cadence Founding Member onboarding. Submit 2 to 3 of your best past posts so we can calibrate your executive Brand Voice Memory profile.">
+
+    <!-- Google Fonts: Instrument Serif (Editorial Headlines) & Inter (Crisp UI / Form Inputs) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        paper: '#FAF9F6',
+                        ink: '#0F172A',
+                        muted: '#475569',
+                        hairline: '#E2E8F0',
+                        brand: {
+                            DEFAULT: '#3730A3',
+                            hover: '#312E81',
+                            soft: '#EEF2FF',
+                            border: '#C7D2FE',
+                        },
+                        slateexec: '#1E293B',
+                    },
+                    boxShadow: {
+                        'editorial': '0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px -6px rgba(15, 23, 42, 0.06)',
+                        'editorial-lg': '0 4px 12px rgba(15, 23, 42, 0.05), 0 20px 44px -12px rgba(15, 23, 42, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-paper text-ink font-sans antialiased selection:bg-indigo-100 selection:text-indigo-950 overflow-x-hidden min-h-screen flex flex-col">
+
+    <!-- =========================================================================
+         1. TOP HEADER BAR
+         ========================================================================= -->
+    <header class="sticky top-0 z-40 w-full bg-paper/95 backdrop-blur-md border-b border-hairline">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[64px] py-2.5 flex flex-wrap items-center justify-between gap-3">
+            <!-- Custom SVG 'Cadence' Wave-C Logo Mark -->
+            <a href="https://vibevaultco.com/cadence/" class="inline-flex items-center gap-2.5 group focus:outline-none" aria-label="Return to Cadence Home">
+                <svg class="w-8 h-8 shrink-0 transition-transform duration-200 group-hover:scale-105" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="cadenceMarkBg" x1="2" y1="2" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#1E293B"/>
+                            <stop offset="100%" stop-color="#3730A3"/>
+                        </linearGradient>
+                        <linearGradient id="cadenceWaveStroke" x1="6" y1="18" x2="30" y2="18" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#C7D2FE"/>
+                            <stop offset="50%" stop-color="#FFFFFF"/>
+                            <stop offset="100%" stop-color="#A5B4FC"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="1" y="1" width="34" height="34" rx="9" fill="url(#cadenceMarkBg)"/>
+                    <!-- Sculpted Letter C -->
+                    <path d="M24.2 12.1C22.7 10.6 20.6 9.7 18.2 9.7C13.4 9.7 9.7 13.4 9.7 18C9.7 22.6 13.4 26.3 18.2 26.3C20.6 26.3 22.7 25.4 24.2 23.9" stroke="#E0E7FF" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Voice Cadence Wave Passing Through C -->
+                    <path d="M7.5 18.5C10.5 15.8 13.2 15.8 16.2 18.3C19.2 20.8 22.2 20.6 28.5 16.8" stroke="url(#cadenceWaveStroke)" stroke-width="2.1" stroke-linecap="round"/>
+                    <path d="M9.5 21.3C12.2 19.3 14.6 19.3 17.3 21.1C20.1 22.9 22.8 22.6 27.5 19.8" stroke="#A5B4FC" stroke-opacity="0.75" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
+                <span class="font-serif text-[28px] tracking-tight text-ink leading-none">Cadence</span>
+            </a>
+
+            <!-- Right Status Pill + Support Link -->
+            <div class="flex items-center gap-3 sm:gap-5">
+                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200/90 text-[11px] sm:text-xs font-semibold text-emerald-900">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+                    <span>Payment Confirmed &middot; Cohort #1 Founding Member</span>
+                </span>
+
+                <a
+                    href="mailto:hello@vibevaultco.com?subject=Cadence%20Cohort%20%231%20Onboarding%20Help"
+                    class="text-xs sm:text-sm font-medium text-muted hover:text-ink underline decoration-hairline underline-offset-4 transition-colors whitespace-nowrap"
+                >
+                    Need help?
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         2. MAIN CONTENT CONTAINER
+         ========================================================================= -->
+    <main class="flex-grow py-12 sm:py-16">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- =====================================================================
+                 ONBOARDING WORKSPACE (HERO + FORM)
+                 ===================================================================== -->
+            <div id="onboarding-workspace">
+                <!-- Hero & Progress Context -->
+                <div class="text-center mb-10 sm:mb-12">
+                    <!-- Progress Stepper Pill -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-brand-soft border border-brand-border text-[11px] sm:text-xs font-semibold tracking-wider text-brand uppercase mb-6">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand"></span>
+                        <span>STEP 2 OF 2 &middot; BRAND VOICE CALIBRATION</span>
+                    </div>
+
+                    <!-- Display H1 -->
+                    <h1 class="font-serif text-4xl sm:text-5xl md:text-[56px] tracking-tight text-ink leading-[1.06] mb-5">
+                        Welcome to Cohort #1. <span class="italic text-brand">Let&rsquo;s clone your executive voice.</span>
+                    </h1>
+
+                    <!-- Subheadline -->
+                    <p class="text-base sm:text-lg text-muted leading-relaxed max-w-2xl mx-auto">
+                        Your &euro;24.50/mo Founding Member rate is locked in for life. Paste 2 to 3 of your strongest past LinkedIn posts, memos, or articles below so we can map your cadence, vocabulary, and formatting ahead of launch.
+                    </p>
+                </div>
+
+                <!-- Main Onboarding Form Card -->
+                <div class="bg-white border border-hairline rounded-2xl shadow-editorial p-6 sm:p-9 md:p-10">
+                    <!-- Top Card Meta Bar -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 pb-5 mb-7 border-b border-hairline">
+                        <div>
+                            <h2 class="text-base sm:text-lg font-semibold text-ink">Executive Voice Calibration Intake</h2>
+                            <p class="text-xs text-muted mt-0.5">Takes ~3 minutes &middot; Private &amp; confidential to your workspace</p>
+                        </div>
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-paper border border-hairline text-xs font-medium text-muted">
+                            <svg class="w-3.5 h-3.5 text-brand" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                            <span>Encrypted Intake</span>
+                        </span>
+                    </div>
+
+                    <!-- Inline Global Error Alert (Hidden by default) -->
+                    <div id="form-error-banner" class="hidden mb-6 p-4 rounded-xl bg-red-50 border border-red-200 text-red-900 text-sm" role="alert">
+                        <div class="flex items-start gap-2.5">
+                            <svg class="w-5 h-5 text-red-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                            </svg>
+                            <div>
+                                <p class="font-semibold">Unable to submit calibration form</p>
+                                <p id="form-error-banner-text" class="text-xs text-red-800 mt-0.5">Please check your internet connection and try again, or email hello@vibevaultco.com.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="calibration-form" class="space-y-7" novalidate>
+                        <!-- Required Hidden Tracking Inputs -->
+                        <input type="hidden" name="submission_type" value="PAID COHORT #1 — BRAND VOICE ONBOARDING">
+                        <input type="hidden" name="_subject" value="New Paid Cohort #1 Onboarding Submission — Cadence">
+
+                        <!-- =============================================================
+                             SECTION A: EXECUTIVE IDENTITY
+                             ============================================================= -->
+                        <div class="space-y-5">
+                            <!-- Field 1: Work Email -->
+                            <div>
+                                <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                                    <label for="work-email" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                                        1. Work Email <span class="font-normal normal-case text-muted">(used at Stripe checkout)</span> <span class="text-red-600">*</span>
+                                    </label>
+                                    <span id="email-prefilled-tag" class="hidden text-[11px] font-medium text-brand bg-brand-soft border border-brand-border px-2 py-0.5 rounded">
+                                        Prefilled from checkout
+                                    </span>
+                                </div>
+                                <input
+                                    type="email"
+                                    id="work-email"
+                                    name="email"
+                                    required
+                                    autocomplete="email"
+                                    placeholder="name@advisoryfirm.com"
+                                    class="w-full px-4 py-3 text-sm sm:text-[15px] text-ink bg-white border border-hairline rounded-xl placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/20 focus:border-brand transition-all"
+                                />
+                                <p id="error-work-email" class="hidden mt-1.5 text-xs font-medium text-red-700">
+                                    Please enter the work email address used for your Stripe checkout.
+                                </p>
+                            </div>
+
+                            <!-- Field 2: Full Name & Primary Role -->
+                            <div class="space-y-3.5">
+                                <div>
+                                    <label for="full-name" class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1.5">
+                                        2. Full Name &amp; Primary Role <span class="text-red-600">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="full-name"
+                                        name="full_name"
+                                        required
+                                        autocomplete="name"
+                                        placeholder="e.g., Marcus Vance"
+                                        class="w-full px-4 py-3 text-sm sm:text-[15px] text-ink bg-white border border-hairline rounded-xl placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/20 focus:border-brand transition-all"
+                                    />
+                                    <p id="error-full-name" class="hidden mt-1.5 text-xs font-medium text-red-700">
+                                        Please enter your full name.
+                                    </p>
+                                </div>
+
+                                <!-- Role Selector Pills -->
+                                <div>
+                                    <span id="role-group-label" class="block text-xs font-medium text-muted mb-2">
+                                        Select your primary executive seat:
+                                    </span>
+                                    <input type="hidden" id="primary-role" name="primary_role" value="Fractional CFO">
+                                    <div class="flex flex-wrap gap-2" role="radiogroup" aria-labelledby="role-group-label">
+                                        <button
+                                            type="button"
+                                            role="radio"
+                                            aria-checked="true"
+                                            data-role-value="Fractional CFO"
+                                            class="role-pill px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-brand text-white border border-brand shadow-xs transition-all cursor-pointer"
+                                        >
+                                            Fractional CFO
+                                        </button>
+                                        <button
+                                            type="button"
+                                            role="radio"
+                                            aria-checked="false"
+                                            data-role-value="Fractional CMO"
+                                            class="role-pill px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-paper hover:bg-slate-100 text-ink border border-hairline transition-all cursor-pointer"
+                                        >
+                                            Fractional CMO
+                                        </button>
+                                        <button
+                                            type="button"
+                                            role="radio"
+                                            aria-checked="false"
+                                            data-role-value="Fractional CTO"
+                                            class="role-pill px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-paper hover:bg-slate-100 text-ink border border-hairline transition-all cursor-pointer"
+                                        >
+                                            Fractional CTO
+                                        </button>
+                                        <button
+                                            type="button"
+                                            role="radio"
+                                            aria-checked="false"
+                                            data-role-value="Fractional COO"
+                                            class="role-pill px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-paper hover:bg-slate-100 text-ink border border-hairline transition-all cursor-pointer"
+                                        >
+                                            Fractional COO
+                                        </button>
+                                        <button
+                                            type="button"
+                                            role="radio"
+                                            aria-checked="false"
+                                            data-role-value="Boutique Consultant"
+                                            class="role-pill px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-paper hover:bg-slate-100 text-ink border border-hairline transition-all cursor-pointer"
+                                        >
+                                            Boutique Consultant
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Field 3: LinkedIn Profile URL -->
+                            <div>
+                                <label for="linkedin-url" class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1.5">
+                                    3. LinkedIn Profile URL <span class="font-normal normal-case text-muted">(Optional &mdash; helps verify formatting style)</span>
+                                </label>
+                                <input
+                                    type="url"
+                                    id="linkedin-url"
+                                    name="linkedin_url"
+                                    placeholder="https://www.linkedin.com/in/your-handle"
+                                    class="w-full px-4 py-3 text-sm sm:text-[15px] text-ink bg-white border border-hairline rounded-xl placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/20 focus:border-brand transition-all"
+                                />
+                            </div>
+                        </div>
+
+                        <hr class="border-hairline">
+
+                        <!-- =============================================================
+                             SECTION B: WRITING SAMPLES FOR VOICE DNA EXTRACTION
+                             ============================================================= -->
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-serif text-2xl sm:text-3xl text-ink leading-tight">Writing Samples for Voice DNA Mapping</h3>
+                                <p class="text-xs sm:text-sm text-muted mt-1">
+                                    Paste raw text directly from your posts, investor updates, or client newsletters. Do not polish them&mdash;your natural punctuation and line breaks are the exact signal we want.
+                                </p>
+                            </div>
+
+                            <!-- Field 4: Sample Post #1 (Required) -->
+                            <div>
+                                <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1.5">
+                                    <label for="sample-post-1" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                                        4. Sample Post #1 <span class="font-normal normal-case text-muted">(Your best-performing or most &ldquo;you&rdquo; LinkedIn post)</span> <span class="text-red-600">*</span>
+                                    </label>
+                                    <span id="counter-sample-1" class="text-[11px] font-medium text-muted tabular-nums">
+                                        0 words &middot; 0 chars
+                                    </span>
+                                </div>
+                                <textarea
+                                    id="sample-post-1"
+                                    name="sample_post_1"
+                                    rows="5"
+                                    required
+                                    placeholder="Paste your strongest past LinkedIn post here..."
+                                    class="w-full px-4 py-3 text-sm text-ink bg-white border border-hairline rounded-xl placeholder:text-slate-400 leading-relaxed focus:outline-none focus:ring-2 focus:ring-brand/20 focus:border-brand transition-all resize-y"
+                                ></textarea>
+                                <p id="error-sample-1" class="hidden mt-1.5 text-xs font-medium text-red-700">
+                                    Please paste Sample Post #1 (at least 40 characters) so we can map your voice.
+                                </p>
+                            </div>
+
+                            <!-- Field 5: Sample Post #2 (Required) -->
+                            <div>
+                                <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1.5">
+                                    <label for="sample-post-2" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                                        5. Sample Post #2 <span class="font-normal normal-case text-muted">(Another post, newsletter, or executive memo)</span> <span class="text-red-600">*</span>
+                                    </label>
+                                    <span id="counter-sample-2" class="text-[11px] font-medium text-muted tabular-nums">
+                                        0 words &middot; 0 chars
+                                    </span>
+                                </div>
+                                <textarea
+                                    id="sample-post-2"
+                                    name="sample_post_2"
+                                    rows="5"
+                                    required
+                                    placeholder="Paste a second post, client memo excerpt, or contrarian take here..."
+                                    class="w-full px-4 py-3 text-sm text-ink bg-white border border-hairline rounded-xl placeholder:text-slate-400 leading-relaxed focus:outline-none focus:ring-2 focus:ring-brand/20 focus:border-brand transition-all resize-y"
+                                ></textarea>
+                                <p id="error-sample-2" class="hidden mt-1.5 text-xs font-medium text-red-700">
+                                    Please paste Sample Post #2 (at least 40 characters) to cross-calibrate your cadence.
+                                </p>
+                            </div>
+
+                            <!-- Field 6: Sample Post #3 (Optional) -->
+                            <div>
+                                <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1.5">
+                                    <label for="sample-post-3" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                                        6. Sample Post #3 <span class="font-normal normal-case text-muted">(Optional &mdash; adds extra precision to sentence rhythm)</span>
+                                    </label>
+                                    <span id="counter-sample-3" class="text-[11px] font-medium text-muted tabular-nums">
+                                        0 words &middot; 0 chars
+                                    </span>
+                                </div>
+                                <textarea
+                                    id="sample-post-3"
+                                    name="sample_post_3"
+                                    rows="4"
+                                    placeholder="Optional: Paste a third sample post or board note for maximum voice accuracy..."
+                                    class="w-full px-4 py-3 text-sm text-ink bg-white border border-hairline rounded-xl placeholder:text-slate-400 leading-relaxed focus:outline-none focus:ring-2 focus:ring-brand/20 focus:border-brand transition-all resize-y"
+                                ></textarea>
+                            </div>
+                        </div>
+
+                        <hr class="border-hairline">
+
+                        <!-- =============================================================
+                             SECTION C: ANTI-CLICHÉ GUARDRAILS
+                             ============================================================= -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1">
+                                    7. Anti-Clich&eacute; Guardrails
+                                </label>
+                                <p class="text-xs sm:text-sm text-muted">
+                                    Click to toggle phrases and formatting habits permanently banned from your drafts:
+                                </p>
+                            </div>
+
+                            <!-- Interactive Toggle Chips -->
+                            <div id="guardrail-chips" class="flex flex-wrap gap-2">
+                                <button
+                                    type="button"
+                                    aria-pressed="true"
+                                    data-phrase="In today's fast-paced landscape"
+                                    class="guardrail-chip inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium bg-brand-soft text-brand border border-brand-border transition-all cursor-pointer"
+                                >
+                                    <span class="chip-icon text-brand font-bold">&times;</span>
+                                    <span>&ldquo;In today&rsquo;s fast-paced landscape&rdquo;</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    aria-pressed="true"
+                                    data-phrase="Let's dive in"
+                                    class="guardrail-chip inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium bg-brand-soft text-brand border border-brand-border transition-all cursor-pointer"
+                                >
+                                    <span class="chip-icon text-brand font-bold">&times;</span>
+                                    <span>&ldquo;Let&rsquo;s dive in&rdquo;</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    aria-pressed="true"
+                                    data-phrase="Game-changer"
+                                    class="guardrail-chip inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium bg-brand-soft text-brand border border-brand-border transition-all cursor-pointer"
+                                >
+                                    <span class="chip-icon text-brand font-bold">&times;</span>
+                                    <span>&ldquo;Game-changer&rdquo;</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    aria-pressed="true"
+                                    data-phrase="Unlock potential"
+                                    class="guardrail-chip inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium bg-brand-soft text-brand border border-brand-border transition-all cursor-pointer"
+                                >
+                                    <span class="chip-icon text-brand font-bold">&times;</span>
+                                    <span>&ldquo;Unlock potential&rdquo;</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    aria-pressed="true"
+                                    data-phrase="Heavy emojis"
+                                    class="guardrail-chip inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium bg-brand-soft text-brand border border-brand-border transition-all cursor-pointer"
+                                >
+                                    <span class="chip-icon text-brand font-bold">&times;</span>
+                                    <span>Heavy emojis</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    aria-pressed="true"
+                                    data-phrase="Hashtag blocks"
+                                    class="guardrail-chip inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium bg-brand-soft text-brand border border-brand-border transition-all cursor-pointer"
+                                >
+                                    <span class="chip-icon text-brand font-bold">&times;</span>
+                                    <span>Hashtag blocks</span>
+                                </button>
+                            </div>
+
+                            <!-- Optional Custom Guardrail Input -->
+                            <div class="pt-1">
+                                <label for="custom-avoid" class="block text-xs font-medium text-muted mb-1.5">
+                                    Custom phrases, buzzwords, or topics to never use <span class="text-slate-400">(Optional)</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    id="custom-avoid"
+                                    name="custom_banned_phrases"
+                                    placeholder="e.g., 'Thought leader', 'Synergy', 'Hustle', or specific client names..."
+                                    class="w-full px-4 py-2.5 text-sm text-ink bg-white border border-hairline rounded-xl placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand/20 focus:border-brand transition-all"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- =============================================================
+                             SUBMIT ACTION
+                             ============================================================= -->
+                        <div class="pt-3">
+                            <button
+                                type="submit"
+                                id="submit-calibration-btn"
+                                class="w-full py-4 px-6 rounded-xl bg-brand hover:bg-brand-hover text-white font-semibold text-base transition-all shadow-editorial hover:shadow-editorial-lg flex items-center justify-center gap-2.5 cursor-pointer"
+                            >
+                                <span id="submit-btn-text">Submit Samples &amp; Start Calibration &rarr;</span>
+                                <svg id="submit-btn-spinner" class="hidden w-5 h-5 animate-spin text-white" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v3a5 5 0 00-5 5H4z"></path>
+                                </svg>
+                            </button>
+                            <p class="text-center text-xs text-muted mt-3">
+                                Your samples are reviewed strictly for your private Cohort #1 voice model and are never shared or used to train public models.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- =====================================================================
+                 3. CONFIRMATION STATE (SHOWN SMOOTHLY ON SUCCESSFUL SUBMISSION)
+                 ===================================================================== -->
+            <div id="confirmation-state" class="hidden">
+                <div class="bg-white border border-hairline rounded-2xl shadow-editorial-lg p-7 sm:p-10 md:p-12">
+                    <!-- Executive Receipt Header -->
+                    <div class="text-center pb-8 mb-8 border-b border-hairline">
+                        <div class="w-12 h-12 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center mx-auto mb-5">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-soft border border-brand-border text-[11px] font-semibold uppercase tracking-wider text-brand mb-3">
+                            <span>Cohort #1 Calibration Receipt</span>
+                        </div>
+
+                        <h2 class="font-serif text-4xl sm:text-5xl text-ink leading-[1.08] mb-3">
+                            Brand Voice Profile Queued for Calibration
+                        </h2>
+                        <p class="text-sm sm:text-base text-muted max-w-xl mx-auto leading-relaxed">
+                            Thank you, <span id="receipt-name" class="font-semibold text-ink">Founding Member</span>. Your writing samples and anti-clich&eacute; guardrails have been securely logged for your <span id="receipt-role" class="font-semibold text-ink">Executive</span> workspace.
+                        </p>
+
+                        <!-- Receipt Summary Strip -->
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-left max-w-2xl mx-auto">
+                            <div class="p-3.5 rounded-xl bg-paper border border-hairline">
+                                <p class="text-[11px] font-semibold uppercase tracking-wider text-muted">Workspace Email</p>
+                                <p id="receipt-email" class="text-xs sm:text-sm font-semibold text-ink truncate mt-0.5">—</p>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-paper border border-hairline">
+                                <p class="text-[11px] font-semibold uppercase tracking-wider text-muted">Samples Submitted</p>
+                                <p id="receipt-samples-count" class="text-xs sm:text-sm font-semibold text-ink mt-0.5">2 Writing Samples</p>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-paper border border-hairline">
+                                <p class="text-[11px] font-semibold uppercase tracking-wider text-muted">Founding Plan</p>
+                                <p class="text-xs sm:text-sm font-semibold text-brand mt-0.5">&euro;24.50/mo Locked For Life</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3-Step Visual Timeline of What Happens Next -->
+                    <div class="mb-9">
+                        <h3 class="text-xs font-semibold uppercase tracking-widest text-muted mb-5 text-center sm:text-left">
+                            What Happens Next
+                        </h3>
+
+                        <div class="space-y-4">
+                            <!-- Timeline Step 1 -->
+                            <div class="flex items-start gap-4 p-4 sm:p-5 rounded-xl bg-paper border border-hairline">
+                                <div class="w-8 h-8 rounded-lg bg-brand text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                                    1
+                                </div>
+                                <div>
+                                    <div class="flex flex-wrap items-center gap-2 mb-1">
+                                        <span class="text-xs font-semibold uppercase tracking-wider text-brand">Within 24 Hours</span>
+                                        <span class="text-slate-300">&middot;</span>
+                                        <h4 class="text-sm sm:text-base font-semibold text-ink">Manual Linguistic &amp; Formatting Extraction</h4>
+                                    </div>
+                                    <p class="text-xs sm:text-sm text-muted leading-relaxed">
+                                        We analyze your submitted samples to extract sentence rhythm, opening hook patterns, executive vocabulary, and strict anti-clich&eacute; rules.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Step 2 -->
+                            <div class="flex items-start gap-4 p-4 sm:p-5 rounded-xl bg-paper border border-hairline">
+                                <div class="w-8 h-8 rounded-lg bg-brand text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                                    2
+                                </div>
+                                <div>
+                                    <div class="flex flex-wrap items-center gap-2 mb-1">
+                                        <span class="text-xs font-semibold uppercase tracking-wider text-brand">Before Launch</span>
+                                        <span class="text-slate-300">&middot;</span>
+                                        <h4 class="text-sm sm:text-base font-semibold text-ink">Private Workspace Invite &amp; Calibration Test Drafts</h4>
+                                    </div>
+                                    <p class="text-xs sm:text-sm text-muted leading-relaxed">
+                                        You will receive your private Cadence workspace invite along with 3 sample LinkedIn posts generated in your cloned voice so you can verify accuracy before v1.0 opens.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Step 3 -->
+                            <div class="flex items-start gap-4 p-4 sm:p-5 rounded-xl bg-paper border border-hairline">
+                                <div class="w-8 h-8 rounded-lg bg-slateexec text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                                    3
+                                </div>
+                                <div>
+                                    <div class="flex flex-wrap items-center gap-2 mb-1">
+                                        <span class="text-xs font-semibold uppercase tracking-wider text-slateexec">Cohort #1 Kickoff</span>
+                                        <span class="text-slate-300">&middot;</span>
+                                        <h4 class="text-sm sm:text-base font-semibold text-ink">Optional 15-Minute 1-on-1 Fine-Tuning Session</h4>
+                                    </div>
+                                    <p class="text-xs sm:text-sm text-muted leading-relaxed">
+                                        Book a quick 1-on-1 calibration call with our founding team to dial in subtle tone preferences and ensure every draft is ready to publish with zero heavy editing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Return CTA -->
+                    <div class="text-center">
+                        <a
+                            href="https://vibevaultco.com/cadence/"
+                            class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slateexec hover:bg-slate-900 text-white font-semibold text-sm sm:text-base transition-colors shadow-sm"
+                        >
+                            <span>&larr; Return to Cadence Home</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- =========================================================================
+         4. MINIMAL EDITORIAL FOOTER
+         ========================================================================= -->
+    <footer class="bg-white border-t border-hairline py-8 mt-auto">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted">
+            <div class="flex items-center gap-2">
+                <span class="font-serif text-lg text-ink leading-none">Cadence</span>
+                <span class="text-slate-300">|</span>
+                <span>Cohort #1 Founding Member Onboarding</span>
+            </div>
+            <p>&copy; 2026 Cadence AI &middot; Built for Fractional Leaders</p>
+        </div>
+    </footer>
+
+    <!-- =========================================================================
+         ONBOARDING INTERACTIVITY & FORMSPREE INTEGRATION
+         ========================================================================= -->
+    <script>
+        const FORMSPREE_ENDPOINT = "https://formspree.io/f/myewopdv";
+
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function countWordsAndChars(text) {
+            const trimmed = text.trim();
+            const chars = text.length;
+            const words = trimmed ? trimmed.split(/\s+/).length : 0;
+            return { words, chars };
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const workEmailInput = document.getElementById("work-email");
+            const emailPrefilledTag = document.getElementById("email-prefilled-tag");
+
+            // 1. Auto-prefill Work Email from ?email= or ?prefilled_email= query string
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const queryEmail = (params.get("email") || params.get("prefilled_email") || "").trim();
+                if (queryEmail && isValidEmail(queryEmail)) {
+                    workEmailInput.value = queryEmail;
+                    emailPrefilledTag.classList.remove("hidden");
+                }
+            } catch (err) {
+                console.warn("Query parameter parse notice:", err);
+            }
+
+            // 2. Interactive Role Selector Pills
+            const rolePills = document.querySelectorAll(".role-pill");
+            const primaryRoleInput = document.getElementById("primary-role");
+
+            rolePills.forEach((pill) => {
+                pill.addEventListener("click", () => {
+                    const selectedRole = pill.dataset.roleValue;
+                    primaryRoleInput.value = selectedRole;
+
+                    rolePills.forEach((btn) => {
+                        const isActive = btn === pill;
+                        btn.setAttribute("aria-checked", String(isActive));
+                        if (isActive) {
+                            btn.classList.add("bg-brand", "text-white", "border-brand", "shadow-xs", "font-semibold");
+                            btn.classList.remove("bg-paper", "hover:bg-slate-100", "text-ink", "border-hairline", "font-medium");
+                        } else {
+                            btn.classList.remove("bg-brand", "text-white", "border-brand", "shadow-xs", "font-semibold");
+                            btn.classList.add("bg-paper", "hover:bg-slate-100", "text-ink", "border-hairline", "font-medium");
+                        }
+                    });
+                });
+            });
+
+            // 3. Live Word & Character Counters for Sample Textareas
+            const sampleFields = [
+                { textareaId: "sample-post-1", counterId: "counter-sample-1" },
+                { textareaId: "sample-post-2", counterId: "counter-sample-2" },
+                { textareaId: "sample-post-3", counterId: "counter-sample-3" }
+            ];
+
+            sampleFields.forEach(({ textareaId, counterId }) => {
+                const textarea = document.getElementById(textareaId);
+                const counter = document.getElementById(counterId);
+
+                const updateCounter = () => {
+                    const { words, chars } = countWordsAndChars(textarea.value);
+                    counter.textContent = `${words} ${words === 1 ? "word" : "words"} · ${chars} ${chars === 1 ? "char" : "chars"}`;
+                };
+
+                textarea.addEventListener("input", updateCounter);
+                updateCounter();
+            });
+
+            // 4. Interactive Anti-Cliché Guardrail Toggle Chips
+            const guardrailChips = document.querySelectorAll(".guardrail-chip");
+
+            guardrailChips.forEach((chip) => {
+                chip.addEventListener("click", () => {
+                    const currentPressed = chip.getAttribute("aria-pressed") === "true";
+                    const nextPressed = !currentPressed;
+                    chip.setAttribute("aria-pressed", String(nextPressed));
+
+                    const iconEl = chip.querySelector(".chip-icon");
+                    if (nextPressed) {
+                        chip.classList.add("bg-brand-soft", "text-brand", "border-brand-border");
+                        chip.classList.remove("bg-paper", "text-muted", "border-hairline", "opacity-75");
+                        if (iconEl) iconEl.textContent = "×";
+                    } else {
+                        chip.classList.remove("bg-brand-soft", "text-brand", "border-brand-border");
+                        chip.classList.add("bg-paper", "text-muted", "border-hairline", "opacity-75");
+                        if (iconEl) iconEl.textContent = "+";
+                    }
+                });
+            });
+
+            // 5. Form Validation & Formspree Submission
+            const form = document.getElementById("calibration-form");
+            const fullNameInput = document.getElementById("full-name");
+            const linkedinInput = document.getElementById("linkedin-url");
+            const sample1Input = document.getElementById("sample-post-1");
+            const sample2Input = document.getElementById("sample-post-2");
+            const sample3Input = document.getElementById("sample-post-3");
+            const customAvoidInput = document.getElementById("custom-avoid");
+
+            const errEmail = document.getElementById("error-work-email");
+            const errName = document.getElementById("error-full-name");
+            const errSample1 = document.getElementById("error-sample-1");
+            const errSample2 = document.getElementById("error-sample-2");
+
+            const formErrorBanner = document.getElementById("form-error-banner");
+            const formErrorBannerText = document.getElementById("form-error-banner-text");
+
+            const submitBtn = document.getElementById("submit-calibration-btn");
+            const submitBtnText = document.getElementById("submit-btn-text");
+            const submitBtnSpinner = document.getElementById("submit-btn-spinner");
+
+            const onboardingWorkspace = document.getElementById("onboarding-workspace");
+            const confirmationState = document.getElementById("confirmation-state");
+
+            const receiptName = document.getElementById("receipt-name");
+            const receiptRole = document.getElementById("receipt-role");
+            const receiptEmail = document.getElementById("receipt-email");
+            const receiptSamplesCount = document.getElementById("receipt-samples-count");
+
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                formErrorBanner.classList.add("hidden");
+
+                const email = workEmailInput.value.trim();
+                const fullName = fullNameInput.value.trim();
+                const primaryRole = primaryRoleInput.value;
+                const linkedinUrl = linkedinInput.value.trim();
+                const sample1 = sample1Input.value.trim();
+                const sample2 = sample2Input.value.trim();
+                const sample3 = sample3Input.value.trim();
+                const customAvoid = customAvoidInput.value.trim();
+
+                let firstInvalidEl = null;
+
+                // Validate Email
+                if (!isValidEmail(email)) {
+                    errEmail.classList.remove("hidden");
+                    firstInvalidEl = firstInvalidEl || workEmailInput;
+                } else {
+                    errEmail.classList.add("hidden");
+                }
+
+                // Validate Full Name
+                if (!fullName) {
+                    errName.classList.remove("hidden");
+                    firstInvalidEl = firstInvalidEl || fullNameInput;
+                } else {
+                    errName.classList.add("hidden");
+                }
+
+                // Validate Sample 1
+                if (sample1.length < 40) {
+                    errSample1.classList.remove("hidden");
+                    firstInvalidEl = firstInvalidEl || sample1Input;
+                } else {
+                    errSample1.classList.add("hidden");
+                }
+
+                // Validate Sample 2
+                if (sample2.length < 40) {
+                    errSample2.classList.remove("hidden");
+                    firstInvalidEl = firstInvalidEl || sample2Input;
+                } else {
+                    errSample2.classList.add("hidden");
+                }
+
+                if (firstInvalidEl) {
+                    firstInvalidEl.focus();
+                    firstInvalidEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                    return;
+                }
+
+                // Gather active banned guardrails
+                const activeGuardrails = Array.from(guardrailChips)
+                    .filter((chip) => chip.getAttribute("aria-pressed") === "true")
+                    .map((chip) => chip.dataset.phrase);
+
+                const payload = {
+                    submission_type: "PAID COHORT #1 — BRAND VOICE ONBOARDING",
+                    _subject: `New Paid Cohort #1 Onboarding Submission — Cadence (${fullName})`,
+                    email: email,
+                    full_name: fullName,
+                    primary_role: primaryRole,
+                    linkedin_url: linkedinUrl || "Not provided",
+                    sample_post_1: sample1,
+                    sample_post_2: sample2,
+                    sample_post_3: sample3 || "Not provided",
+                    banned_cliches: activeGuardrails.length > 0 ? activeGuardrails.join(", ") : "None selected",
+                    custom_banned_phrases: customAvoid || "None provided",
+                    submitted_at: new Date().toISOString()
+                };
+
+                // Enter Loading State
+                submitBtn.disabled = true;
+                submitBtn.classList.add("opacity-85", "cursor-not-allowed");
+                submitBtnText.textContent = "Submitting Samples & Queueing Calibration...";
+                submitBtnSpinner.classList.remove("hidden");
+
+                try {
+                    const response = await fetch(FORMSPREE_ENDPOINT, {
+                        method: "POST",
+                        headers: {
+                            "Accept": "application/json",
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        let errorDetail = `Server responded with status ${response.status}.`;
+                        try {
+                            const errJson = await response.json();
+                            if (errJson && errJson.errors && errJson.errors.length > 0) {
+                                errorDetail = errJson.errors.map((item) => item.message).join(" ");
+                            }
+                        } catch (_) {}
+                        throw new Error(errorDetail);
+                    }
+
+                    // Populate Receipt Confirmation State
+                    const totalSamples = sample3.length > 0 ? 3 : 2;
+                    receiptName.textContent = fullName;
+                    receiptRole.textContent = primaryRole;
+                    receiptEmail.textContent = email;
+                    receiptSamplesCount.textContent = `${totalSamples} Writing Samples`;
+
+                    // Transition smoothly to Confirmation State
+                    onboardingWorkspace.classList.add("hidden");
+                    confirmationState.classList.remove("hidden");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+
+                } catch (err) {
+                    console.error("Onboarding submission error:", err);
+                    formErrorBannerText.textContent = `${err.message || "Network error."} Please try again or reach out to hello@vibevaultco.com.`;
+                    formErrorBanner.classList.remove("hidden");
+                    formErrorBanner.scrollIntoView({ behavior: "smooth", block: "center" });
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove("opacity-85", "cursor-not-allowed");
+                    submitBtnText.textContent = "Submit Samples & Start Calibration →";
+                    submitBtnSpinner.classList.add("hidden");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
