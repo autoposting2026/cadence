@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadence — Founding Member Pre-Order | AI LinkedIn Ghostwriter for Fractional Executives</title>
+    <meta name="description" content="AI LinkedIn posts that actually sound like you. Reserve 1 of 20 Founding Member spots at €24.50/mo locked for life — 100% refundable anytime before launch.">
+
+    <!-- Google Fonts: Instrument Serif (Editorial Headlines) & Inter (Crisp UI / Body Copy) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        paper: '#FAF9F6',
+                        card: '#FFFFFF',
+                        ink: '#141413',
+                        stonebody: '#57534E',
+                        hairline: '#E7E5E4',
+                        emeralddeep: {
+                            DEFAULT: '#0F4C3A',
+                            hover: '#0A382B',
+                            soft: '#ECFDF5',
+                            border: '#A7F3D0',
+                        },
+                        gold: {
+                            DEFAULT: '#B45309',
+                            soft: '#FFFBEB',
+                            border: '#FDE68A',
+                        }
+                    },
+                    boxShadow: {
+                        'editorial': '0 1px 2px rgba(20, 20, 19, 0.04), 0 8px 24px -6px rgba(20, 20, 19, 0.06)',
+                        'editorial-lg': '0 4px 12px rgba(20, 20, 19, 0.05), 0 20px 40px -12px rgba(20, 20, 19, 0.09)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-paper text-ink font-sans antialiased selection:bg-emerald-100 selection:text-emerald-950 overflow-x-hidden">
+
+    <!-- =========================================================================
+         1. TOP TRANSPARENT PRE-ORDER BANNER
+         ========================================================================= -->
+    <div class="w-full bg-emeralddeep text-white border-b border-emerald-950/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 text-center text-xs sm:text-[13px] font-medium tracking-tight leading-snug">
+            <span class="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+                <span class="inline-flex items-center gap-1.5 text-amber-200 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-300"></span>
+                    Founding Member Pre-Order
+                </span>
+                <span class="text-emerald-200/60 hidden sm:inline">&middot;</span>
+                <span>Limited to <span class="js-spots-total">20</span> Executives (<span class="js-spots-remaining font-semibold text-amber-200">14</span> left)</span>
+                <span class="text-emerald-200/60 hidden sm:inline">&middot;</span>
+                <span>&euro;24.50/mo locked for life (50% off &euro;49/mo)</span>
+                <span class="text-emerald-200/60 hidden sm:inline">&middot;</span>
+                <span>100% refundable before launch</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         2. STICKY MINIMAL HEADER
+         ========================================================================= -->
+    <header class="sticky top-0 z-40 w-full bg-paper/90 backdrop-blur-md border-b border-hairline">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo: Cadence in Instrument Serif with subtle emerald dot -->
+            <a href="#" class="flex items-baseline gap-1 group focus:outline-none">
+                <span class="font-serif text-3xl tracking-tight text-ink leading-none">Cadence</span>
+                <span class="w-2 h-2 rounded-full bg-emeralddeep inline-block mb-0.5 group-hover:scale-110 transition-transform" aria-hidden="true"></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-stonebody" aria-label="Main navigation">
+                <a href="#voice-comparison" class="hover:text-ink transition-colors">Voice Comparison</a>
+                <a href="#how-it-works" class="hover:text-ink transition-colors">How It Works</a>
+                <a href="#roi-calculator" class="hover:text-ink transition-colors">ROI Calculator</a>
+                <a href="#founding-offer" class="hover:text-ink transition-colors">Founding Offer</a>
+                <a href="#faq" class="hover:text-ink transition-colors">FAQ</a>
+            </nav>
+
+            <!-- CTA + Mobile Menu Trigger -->
+            <div class="flex items-center gap-2.5">
+                <button
+                    type="button"
+                    data-modal-mode="preorder"
+                    data-cta-source="header-nav"
+                    class="open-modal-btn inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium text-white bg-emeralddeep hover:bg-emeralddeep-hover rounded-lg transition-all shadow-sm cursor-pointer"
+                >
+                    Reserve Founding Spot
+                </button>
+
+                <button
+                    type="button"
+                    id="mobile-menu-toggle"
+                    class="lg:hidden p-2.5 rounded-lg text-stonebody hover:text-ink hover:bg-stone-200/60 transition-colors cursor-pointer"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-hairline bg-card px-4 py-3 space-y-1 shadow-editorial">
+            <a href="#voice-comparison" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-stonebody hover:text-ink hover:bg-paper">Voice Comparison</a>
+            <a href="#how-it-works" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-stonebody hover:text-ink hover:bg-paper">How It Works</a>
+            <a href="#roi-calculator" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-stonebody hover:text-ink hover:bg-paper">ROI Calculator</a>
+            <a href="#founding-offer" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-stonebody hover:text-ink hover:bg-paper">Founding Offer</a>
+            <a href="#faq" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-stonebody hover:text-ink hover:bg-paper">FAQ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========================================================================
+             3. HERO SECTION
+             ========================================================================= -->
+        <section class="pt-16 pb-16 sm:pt-24 sm:pb-24 border-b border-hairline">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Kicker Badge -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-soft border border-gold-border text-[11px] sm:text-xs font-semibold tracking-wider text-gold uppercase mb-7">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                    For Fractional Executives &amp; Boutique Consultants &middot; Cohort #1 Pre-Order
+                </div>
+
+                <!-- Editorial Headline -->
+                <h1 class="font-serif text-5xl sm:text-6xl md:text-[72px] tracking-tight text-ink leading-[1.04] max-w-4xl mx-auto mb-6">
+                    AI LinkedIn posts that
+                    <span class="italic text-emeralddeep">actually sound like you.</span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-base sm:text-xl text-stonebody leading-relaxed max-w-2xl mx-auto mb-9">
+                    Stop spending hours fighting ChatGPT to strip out generic &ldquo;LinkedIn-speak.&rdquo; Our Brand Voice Memory Engine studies your past posts and memos to write authoritative, ready-to-publish content in your exact tone and formatting.
+                </p>
+
+                <!-- Hero CTAs -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
+                    <button
+                        type="button"
+                        data-modal-mode="preorder"
+                        data-cta-source="hero-primary"
+                        class="open-modal-btn w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-medium text-white bg-emeralddeep hover:bg-emeralddeep-hover rounded-xl transition-all shadow-editorial hover:shadow-editorial-lg cursor-pointer"
+                    >
+                        <span>Reserve Founding Spot &mdash; &euro;24.50/mo</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </button>
+
+                    <a
+                        href="#voice-comparison"
+                        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 text-sm sm:text-base font-medium text-ink bg-card hover:bg-stone-100/80 border border-hairline rounded-xl transition-colors"
+                    >
+                        Compare AI vs. Cloned Voice
+                        <svg class="w-4 h-4 text-stonebody" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Honest Micro-Text -->
+                <p class="mt-4 text-xs sm:text-sm text-stonebody">
+                    Launches in <span class="js-launch-label font-medium text-ink">30 Days from Enrollment</span> &middot; Billing starts at launch &middot; 100% refundable anytime before launch.
+                </p>
+
+                <!-- Clean 3-Stat Trust Strip -->
+                <div class="mt-14 pt-10 border-t border-hairline grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-card border border-hairline rounded-xl p-5 shadow-editorial text-left sm:text-center">
+                        <p class="font-serif text-2xl sm:text-3xl text-ink"><span class="js-spots-total">20</span> Founding Spots Only</p>
+                        <p class="text-xs sm:text-sm text-stonebody mt-1"><span class="js-spots-remaining font-semibold text-emeralddeep">14</span> spots remaining in Cohort #1</p>
+                    </div>
+                    <div class="bg-card border border-hairline rounded-xl p-5 shadow-editorial text-left sm:text-center">
+                        <p class="font-serif text-2xl sm:text-3xl text-ink">&euro;24.50/mo Locked For Life</p>
+                        <p class="text-xs sm:text-sm text-stonebody mt-1">Permanent 50% off &euro;49/mo public pricing</p>
+                    </div>
+                    <div class="bg-card border border-hairline rounded-xl p-5 shadow-editorial text-left sm:text-center">
+                        <p class="font-serif text-2xl sm:text-3xl text-ink">1-on-1 Voice Calibration</p>
+                        <p class="text-xs sm:text-sm text-stonebody mt-1">Hands-on concierge onboarding included</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             4. PROBLEM SECTION
+             ========================================================================= -->
+        <section class="py-20 sm:py-28 bg-card border-b border-hairline">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-14">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-emeralddeep mb-3">The Executive Dilemma</p>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink leading-[1.08] mb-5">
+                        You bill at &euro;200+ an hour. Why are you spending 3 hours a week writing LinkedIn content?
+                    </h2>
+                    <p class="text-base sm:text-lg text-stonebody leading-relaxed">
+                        In fractional advisory, your LinkedIn presence quietly pre-sells &euro;5,000&ndash;&euro;15,000/month retainers long before a CEO ever books a call. Yet right now, every senior operator faces two costly dead ends:
+                    </p>
+                </div>
+
+                <!-- Two Side-by-Side Problem Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                    <!-- Option 1: Write From Scratch -->
+                    <div class="bg-paper border border-hairline rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-5">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-200/80 text-xs font-semibold text-ink">
+                                    Option 1 &middot; Write From Scratch
+                                </span>
+                                <span class="w-8 h-8 rounded-lg bg-red-50 border border-red-200/80 text-red-700 flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-ink mb-3">
+                                12+ billable hours lost every month (&euro;2,400+ opportunity cost)
+                            </h3>
+                            <p class="text-sm sm:text-base text-stonebody leading-relaxed">
+                                Between board prep, client audits, and executive leadership syncs, staring at a blank cursor always gets pushed to Sunday evening. The moment client delivery spikes, your posting stops&mdash;and your inbound pipeline cools down.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-5 border-t border-hairline text-xs font-medium text-stonebody">
+                            Hidden cost: Feast-or-famine deal flow whenever you get busy with client work.
+                        </div>
+                    </div>
+
+                    <!-- Option 2: Standard AI / ChatGPT -->
+                    <div class="bg-paper border border-hairline rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-5">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-200/80 text-xs font-semibold text-ink">
+                                    Option 2 &middot; Standard AI / ChatGPT
+                                </span>
+                                <span class="w-8 h-8 rounded-lg bg-red-50 border border-red-200/80 text-red-700 flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-ink mb-3">
+                                Obvious AI clich&eacute;s that quietly erode C-suite credibility
+                            </h3>
+                            <p class="text-sm sm:text-base text-stonebody leading-relaxed">
+                                Generic prompts spit out &ldquo;In today&rsquo;s fast-paced digital landscape...&rdquo; and hollow emoji lists. Every founder in your network recognizes ChatGPT fluff instantly&mdash;forcing you to spend 30+ minutes rewriting every draft from the ground up.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-5 border-t border-hairline text-xs font-medium text-stonebody">
+                            Hidden cost: Reputational drag with the exact decision-makers you want to impress.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             5. INTERACTIVE "STANDARD CHATGPT VS. CADENCE CLONED VOICE" SHOWCASE
+             ========================================================================= -->
+        <section id="voice-comparison" class="py-20 sm:py-28 bg-paper border-b border-hairline scroll-mt-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-emeralddeep mb-3">See The Difference</p>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink leading-[1.08] mb-4">
+                        Standard ChatGPT vs. <span class="italic text-emeralddeep">Cloned Executive Voice</span>
+                    </h2>
+                    <p class="text-base sm:text-lg text-stonebody">
+                        Switch executive roles below. Both cards were generated from the exact same rough one-line note.
+                    </p>
+                </div>
+
+                <!-- Interactive Comparison Container -->
+                <div class="bg-card border border-hairline rounded-2xl shadow-editorial overflow-hidden">
+                    <!-- Top Bar: Raw Prompt + Role Switcher Tabs -->
+                    <div class="px-5 py-4 sm:px-7 sm:py-5 bg-paper/70 border-b border-hairline flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                        <div class="min-w-0">
+                            <p class="text-[11px] font-semibold uppercase tracking-wider text-stonebody">Raw 10-Second Input Note</p>
+                            <p id="showcase-input-note" class="text-sm sm:text-[15px] font-medium text-ink mt-0.5">
+                                <!-- Populated via JS -->
+                            </p>
+                        </div>
+
+                        <!-- Role Switcher Tabs -->
+                        <div class="inline-flex p-1 bg-stone-200/70 rounded-xl self-start lg:self-auto shrink-0" role="tablist" aria-label="Executive role examples">
+                            <button
+                                type="button"
+                                role="tab"
+                                aria-selected="true"
+                                data-role="cfo"
+                                class="role-tab px-3.5 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-lg bg-card text-ink shadow-sm transition-all cursor-pointer"
+                            >
+                                Fractional CFO
+                            </button>
+                            <button
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                data-role="cmo"
+                                class="role-tab px-3.5 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-lg text-stonebody hover:text-ink transition-all cursor-pointer"
+                            >
+                                Fractional CMO
+                            </button>
+                            <button
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                data-role="cto"
+                                class="role-tab px-3.5 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-lg text-stonebody hover:text-ink transition-all cursor-pointer"
+                            >
+                                Fractional CTO
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Side-by-Side Realistic LinkedIn Mockups -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-hairline">
+                        <!-- Left Card: Standard ChatGPT ("Generic AI Slop") -->
+                        <div class="p-6 sm:p-8 bg-stone-50/70 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between gap-2 mb-5">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-red-50 border border-red-200/80 text-xs font-semibold text-red-800">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                                        Generic AI Slop
+                                    </span>
+                                    <span class="text-xs text-stonebody">Standard ChatGPT Prompt</span>
+                                </div>
+
+                                <!-- Realistic LinkedIn Post Card -->
+                                <div class="bg-card border border-hairline rounded-xl p-5">
+                                    <div class="flex items-center gap-3 mb-4 opacity-75">
+                                        <div id="gpt-avatar" class="w-10 h-10 rounded-full bg-stone-200 text-stone-600 flex items-center justify-center text-xs font-semibold shrink-0"></div>
+                                        <div class="min-w-0">
+                                            <p id="gpt-name" class="text-sm font-semibold text-ink truncate"></p>
+                                            <p id="gpt-headline" class="text-xs text-stonebody truncate"></p>
+                                        </div>
+                                    </div>
+                                    <div id="gpt-post" class="text-sm text-stonebody leading-relaxed whitespace-pre-line"></div>
+                                </div>
+                            </div>
+
+                            <!-- Red Warning Indicators -->
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="text-xs px-2.5 py-1 rounded-md bg-red-50/90 border border-red-200/60 text-red-800">&times; Obvious AI opener</span>
+                                <span class="text-xs px-2.5 py-1 rounded-md bg-red-50/90 border border-red-200/60 text-red-800">&times; Emoji &amp; hashtag spam</span>
+                                <span class="text-xs px-2.5 py-1 rounded-md bg-red-50/90 border border-red-200/60 text-red-800">&times; Zero operator depth</span>
+                            </div>
+                        </div>
+
+                        <!-- Right Card: Cadence Brand Voice Memory ("Cloned Executive Voice") -->
+                        <div class="p-6 sm:p-8 bg-card flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between gap-2 mb-5">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emeralddeep-soft border border-emeralddeep-border text-xs font-semibold text-emeralddeep">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emeralddeep"></span>
+                                        Cloned Executive Voice
+                                    </span>
+                                    <span id="cadence-meta" class="text-xs font-medium text-emeralddeep"></span>
+                                </div>
+
+                                <!-- Realistic LinkedIn Post Card -->
+                                <div class="bg-paper/70 border border-emeralddeep/25 rounded-xl p-5 shadow-xs">
+                                    <div class="flex items-center gap-3 mb-4">
+                                        <div id="cadence-avatar" class="w-10 h-10 rounded-full bg-emeralddeep text-white flex items-center justify-center text-xs font-semibold shrink-0"></div>
+                                        <div class="min-w-0">
+                                            <p id="cadence-name" class="text-sm font-semibold text-ink truncate"></p>
+                                            <p id="cadence-headline" class="text-xs text-stonebody truncate"></p>
+                                        </div>
+                                    </div>
+                                    <div id="cadence-post" class="text-sm sm:text-[15px] text-ink leading-relaxed whitespace-pre-line"></div>
+                                </div>
+                            </div>
+
+                            <!-- Voice DNA Tags Underneath -->
+                            <div class="mt-5">
+                                <p class="text-[11px] font-semibold uppercase tracking-wider text-stonebody mb-2">Applied Voice DNA Profile</p>
+                                <div id="voice-dna-tags" class="flex flex-wrap gap-2">
+                                    <!-- Populated via JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             6. SOLUTION / HOW IT WORKS SECTION
+             ========================================================================= -->
+        <section id="how-it-works" class="py-20 sm:py-28 bg-card border-b border-hairline scroll-mt-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-emeralddeep mb-3">Brand Voice Memory Engine</p>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink leading-[1.08] mb-4">
+                        Meet your AI Ghostwriter <span class="italic text-emeralddeep">that actually knows you.</span>
+                    </h2>
+                    <p class="text-base sm:text-lg text-stonebody leading-relaxed">
+                        No endless prompt templates. Cadence learns directly from your real writing so every draft sounds like it came straight from your desk.
+                    </p>
+                </div>
+
+                <!-- 3 Editorial Numbered Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- Step 01 -->
+                    <div class="bg-paper border border-hairline rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="font-serif text-3xl text-emeralddeep leading-none">01</span>
+                                <span class="w-9 h-9 rounded-lg bg-card border border-hairline text-stonebody flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-ink mb-3">The Brain Dump</h3>
+                            <p class="text-sm sm:text-[15px] text-stonebody leading-relaxed">
+                                Upload 3&ndash;5 of your best past LinkedIn posts, investor updates, client memos, or articles. Takes under 2 minutes with zero formatting cleanup required.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="bg-paper border border-hairline rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="font-serif text-3xl text-emeralddeep leading-none">02</span>
+                                <span class="w-9 h-9 rounded-lg bg-card border border-hairline text-stonebody flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-ink mb-3">Voice DNA Mapping</h3>
+                            <p class="text-sm sm:text-[15px] text-stonebody leading-relaxed">
+                                Cadence analyzes your vocabulary, sentence cadence, formatting habits, and contrarian stances&mdash;locking out banned AI buzzwords permanently.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="bg-paper border border-hairline rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="font-serif text-3xl text-emeralddeep leading-none">03</span>
+                                <span class="w-9 h-9 rounded-lg bg-card border border-hairline text-stonebody flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-ink mb-3">Executive Drafts in 10 Seconds</h3>
+                            <p class="text-sm sm:text-[15px] text-stonebody leading-relaxed">
+                                Drop in a rough thought, sanitized meeting insight, or article URL and get a publish-ready LinkedIn post requiring minimal edits.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             7. INTERACTIVE EXECUTIVE ROI CALCULATOR
+             ========================================================================= -->
+        <section id="roi-calculator" class="py-20 sm:py-28 bg-paper border-b border-hairline scroll-mt-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                    <!-- Left Copy Column -->
+                    <div class="lg:col-span-5">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-emeralddeep mb-3">The Executive Math</p>
+                        <h2 class="font-serif text-4xl sm:text-5xl text-ink leading-[1.08] mb-5">
+                            One saved hour pays for <span class="italic text-emeralddeep">nine months</span> of Cadence.
+                        </h2>
+                        <p class="text-base text-stonebody leading-relaxed mb-7">
+                            Adjust your billing rate and weekly writing time to see what LinkedIn content creation actually costs your practice today&mdash;before even counting a single inbound fractional retainer.
+                        </p>
+
+                        <ul class="space-y-3.5 text-sm text-ink">
+                            <li class="flex items-start gap-3">
+                                <span class="mt-0.5 w-5 h-5 rounded-full bg-emeralddeep-soft border border-emeralddeep-border text-emeralddeep flex items-center justify-center shrink-0">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span>Built strictly for high-trust B2B advisory, not viral growth hacking.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-0.5 w-5 h-5 rounded-full bg-emeralddeep-soft border border-emeralddeep-border text-emeralddeep flex items-center justify-center shrink-0">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span>Turn 15 minutes on Monday into a full week of sharp executive commentary.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-0.5 w-5 h-5 rounded-full bg-emeralddeep-soft border border-emeralddeep-border text-emeralddeep flex items-center justify-center shrink-0">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </span>
+                                <span>Founding rate of &euro;24.50/mo never increases for Cohort #1 members.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Interactive Calculator Card -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-card border border-hairline rounded-2xl p-6 sm:p-8 shadow-editorial">
+                            <div class="flex flex-wrap items-center justify-between gap-2 pb-5 mb-6 border-b border-hairline">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-ink">Executive Time-Value Calculator</h3>
+                                    <p class="text-xs text-stonebody mt-0.5">Calculated across 4 working weeks per month</p>
+                                </div>
+                                <span id="roi-badge" class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emeralddeep-soft border border-emeralddeep-border text-emeralddeep tabular-nums">
+                                    110x return on time
+                                </span>
+                            </div>
+
+                            <!-- Slider 1: Hourly Billing Rate (€100 to €500, default €225) -->
+                            <div class="mb-7">
+                                <div class="flex items-center justify-between mb-2">
+                                    <label for="slider-hourly-rate" class="text-sm font-medium text-ink">
+                                        Your Hourly Billing Rate
+                                    </label>
+                                    <span id="display-hourly-rate" class="text-base font-semibold text-emeralddeep tabular-nums">
+                                        &euro;225/hr
+                                    </span>
+                                </div>
+                                <input
+                                    id="slider-hourly-rate"
+                                    type="range"
+                                    min="100"
+                                    max="500"
+                                    step="5"
+                                    value="225"
+                                    class="w-full h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-[#0F4C3A]"
+                                />
+                                <div class="flex justify-between text-[11px] text-stonebody mt-1.5">
+                                    <span>&euro;100/hr</span>
+                                    <span>&euro;300/hr</span>
+                                    <span>&euro;500/hr</span>
+                                </div>
+                            </div>
+
+                            <!-- Slider 2: Hours Spent Writing LinkedIn Content Per Week (1 to 8, default 3) -->
+                            <div class="mb-8">
+                                <div class="flex items-center justify-between mb-2">
+                                    <label for="slider-weekly-hours" class="text-sm font-medium text-ink">
+                                        Hours Spent Writing LinkedIn Content / Week
+                                    </label>
+                                    <span id="display-weekly-hours" class="text-base font-semibold text-emeralddeep tabular-nums">
+                                        3 hrs/wk
+                                    </span>
+                                </div>
+                                <input
+                                    id="slider-weekly-hours"
+                                    type="range"
+                                    min="1"
+                                    max="8"
+                                    step="0.5"
+                                    value="3"
+                                    class="w-full h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-[#0F4C3A]"
+                                />
+                                <div class="flex justify-between text-[11px] text-stonebody mt-1.5">
+                                    <span>1 hr/wk</span>
+                                    <span>4.5 hrs/wk</span>
+                                    <span>8 hrs/wk</span>
+                                </div>
+                            </div>
+
+                            <!-- Dynamic Output Summary -->
+                            <div class="bg-paper border border-hairline rounded-xl p-5 space-y-4">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                                    <span class="text-sm text-stonebody">Monthly Billable Value Reclaimed</span>
+                                    <span id="display-monthly-value" class="font-serif text-3xl sm:text-4xl text-ink tabular-nums">
+                                        &euro;2,700/mo
+                                    </span>
+                                </div>
+
+                                <div class="pt-3.5 border-t border-hairline flex items-center justify-between text-sm">
+                                    <span class="text-stonebody">Founding Member Investment</span>
+                                    <span class="font-semibold text-ink tabular-nums">
+                                        &euro;24.50/mo <span class="text-xs font-normal text-stonebody line-through ml-1">&euro;49/mo public</span>
+                                    </span>
+                                </div>
+
+                                <div class="pt-3.5 border-t border-hairline flex items-center justify-between text-sm">
+                                    <span class="font-medium text-ink">Implied ROI Multiplier</span>
+                                    <span id="display-roi-multiplier" class="font-semibold text-emeralddeep text-base tabular-nums">
+                                        110x return on time
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Direct Pre-Order CTA -->
+                            <button
+                                type="button"
+                                data-modal-mode="preorder"
+                                data-cta-source="roi-calculator"
+                                class="open-modal-btn mt-6 w-full py-3.5 px-5 rounded-xl bg-emeralddeep hover:bg-emeralddeep-hover text-white text-sm sm:text-base font-medium transition-all shadow-sm cursor-pointer"
+                            >
+                                Claim Founding Spot &mdash; &euro;24.50/mo Locked For Life
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             8. HONEST FOUNDING MEMBER PRE-ORDER & LAUNCH ROADMAP SECTION
+             ========================================================================= -->
+        <section id="founding-offer" class="py-20 sm:py-28 bg-card border-b border-hairline scroll-mt-16">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Transparent Pre-Order Explanation -->
+                <div class="max-w-3xl mx-auto text-center mb-14">
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-soft border border-gold-border text-[11px] font-semibold uppercase tracking-wider text-gold mb-4">
+                        Transparent Pre-Order &middot; Cohort #1
+                    </div>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink leading-[1.08] mb-5">
+                        Why we&rsquo;re opening with 20 Founding Executives first.
+                    </h2>
+                    <p class="text-base sm:text-lg text-stonebody leading-relaxed">
+                        We are finalizing the Brand Voice Memory Engine and onboarding our first <span class="js-spots-total">20</span> executives hands-on before opening public access. Rather than launching a rushed generic tool, Cohort #1 gets white-glove voice calibration and 50% off for life.
+                    </p>
+                </div>
+
+                <!-- 3-Milestone Launch Timeline -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-16">
+                    <div class="bg-paper border border-hairline rounded-xl p-6">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-emeralddeep mb-2">Weeks 1&ndash;2</p>
+                        <h3 class="text-base font-semibold text-ink mb-2">Reserve &amp; Submit Samples</h3>
+                        <p class="text-sm text-stonebody leading-relaxed">
+                            Lock in your founding spot and send 3&ndash;5 of your past LinkedIn posts, newsletters, or memos for concierge voice calibration.
+                        </p>
+                    </div>
+                    <div class="bg-paper border border-hairline rounded-xl p-6">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-emeralddeep mb-2">Week 3</p>
+                        <h3 class="text-base font-semibold text-ink mb-2">Private Beta + 15-Min Setup</h3>
+                        <p class="text-sm text-stonebody leading-relaxed">
+                            Receive private beta access plus a 15-minute live setup call to fine-tune your Voice DNA until drafts read indistinguishably from your own writing.
+                        </p>
+                    </div>
+                    <div class="bg-paper border border-hairline rounded-xl p-6">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-emeralddeep mb-2">Week 4</p>
+                        <h3 class="text-base font-semibold text-ink mb-2">Full v1.0 Public Launch</h3>
+                        <p class="text-sm text-stonebody leading-relaxed">
+                            Cadence opens publicly at &euro;49/mo. Your founding Month 1 officially begins here&mdash;at &euro;24.50/mo locked for life.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pricing Comparison Box -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                    <!-- Highlighted Card: Founding Member Pre-Order -->
+                    <div class="lg:col-span-7 bg-card border-2 border-emeralddeep rounded-2xl p-7 sm:p-9 shadow-editorial-lg flex flex-col justify-between relative">
+                        <div>
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-soft border border-gold-border text-xs font-semibold text-gold">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                                    <span class="js-spots-remaining">14</span> of <span class="js-spots-total">20</span> spots remaining
+                                </span>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-emeralddeep">50% Lifetime Discount</span>
+                            </div>
+
+                            <h3 class="font-serif text-3xl sm:text-4xl text-ink mb-2">Founding Member Pre-Order</h3>
+                            <p class="text-sm text-stonebody mb-6">
+                                For Fractional CFOs, CMOs, CTOs, COOs &amp; Boutique Agency Owners joining Cohort #1.
+                            </p>
+
+                            <div class="flex items-baseline gap-2 pb-6 mb-6 border-b border-hairline">
+                                <span class="text-5xl font-bold tracking-tight text-ink">&euro;24.50</span>
+                                <span class="text-sm font-medium text-stonebody">/month locked for life</span>
+                                <span class="text-sm text-stone-400 line-through ml-1">&euro;49/mo</span>
+                            </div>
+
+                            <ul class="space-y-3.5 text-sm text-ink mb-8">
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-4 h-4 text-emeralddeep mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                    <span><strong class="font-semibold">50% lifetime discount</strong> locked permanently (&euro;24.50/mo vs. &euro;49/mo public)</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-4 h-4 text-emeralddeep mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                    <span><strong class="font-semibold">Concierge 1-on-1 voice setup</strong> &amp; 15-minute live calibration call</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-4 h-4 text-emeralddeep mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                    <span><strong class="font-semibold">Direct roadmap influence</strong> on templates, formatting &amp; scheduling integrations</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-4 h-4 text-emeralddeep mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                    <span><strong class="font-semibold">Unlimited executive drafts</strong> &amp; private isolated data vault</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-4 h-4 text-emeralddeep mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                    <span><strong class="font-semibold">100% no-questions-asked refund</strong> anytime before launch</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button
+                                type="button"
+                                data-modal-mode="preorder"
+                                data-cta-source="pricing-founding-card"
+                                class="open-modal-btn w-full py-4 px-6 rounded-xl bg-emeralddeep hover:bg-emeralddeep-hover text-white font-semibold text-base transition-all shadow-sm hover:shadow cursor-pointer"
+                            >
+                                Reserve My Founding Spot (&euro;24.50)
+                            </button>
+                            <p class="mt-3 text-center text-xs text-stonebody">
+                                Your first month starts on launch day &middot; Cancel anytime in 1 click
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Secondary Muted Card: Public Launch Waitlist -->
+                    <div class="lg:col-span-5 bg-paper border border-hairline rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="mb-5">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full bg-stone-200/80 text-xs font-semibold text-stonebody">
+                                    Standard Public Release
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-3xl text-ink mb-2">Public Launch Waitlist</h3>
+                            <p class="text-sm text-stonebody leading-relaxed mb-6">
+                                Not ready to pre-order today? Get notified when doors open at standard pricing.
+                            </p>
+
+                            <div class="flex items-baseline gap-1.5 pb-6 mb-6 border-b border-hairline">
+                                <span class="text-4xl font-bold tracking-tight text-ink">&euro;49</span>
+                                <span class="text-sm font-medium text-stonebody">/month at launch</span>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-stonebody mb-8">
+                                <li class="flex items-start gap-2.5">
+                                    <span class="text-stone-400">&bull;</span>
+                                    <span>One email notification when v1.0 goes live</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <span class="text-stone-400">&bull;</span>
+                                    <span>Self-serve Brand Voice Memory onboarding</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <span class="text-stone-400">&bull;</span>
+                                    <span>Standard &euro;49/month subscription rate</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <span class="text-stone-400">&bull;</span>
+                                    <span>No upfront commitment required today</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button
+                                type="button"
+                                data-modal-mode="waitlist"
+                                data-cta-source="pricing-waitlist-card"
+                                class="open-modal-btn w-full py-3.5 px-5 rounded-xl bg-card hover:bg-stone-100 text-ink border border-hairline font-medium text-sm transition-colors cursor-pointer"
+                            >
+                                Join Public Waitlist (Free)
+                            </button>
+                            <p class="mt-3 text-center text-xs text-stonebody">
+                                Zero spam &mdash; launch announcement only
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             9. EXECUTIVE FAQ ACCORDION (5 QUESTIONS)
+             ========================================================================= -->
+        <section id="faq" class="py-20 sm:py-28 bg-paper border-b border-hairline scroll-mt-16">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-emeralddeep mb-3">Questions &amp; Answers</p>
+                    <h2 class="font-serif text-4xl sm:text-5xl text-ink leading-[1.08]">
+                        Straight answers before you reserve.
+                    </h2>
+                </div>
+
+                <div class="space-y-3" id="faq-list">
+                    <!-- FAQ 1 -->
+                    <div class="bg-card border border-hairline rounded-xl overflow-hidden">
+                        <button
+                            type="button"
+                            class="faq-trigger w-full px-6 py-4.5 py-4 text-left flex items-center justify-between gap-4 text-sm sm:text-base font-semibold text-ink hover:bg-paper/60 transition-colors cursor-pointer"
+                            aria-expanded="true"
+                        >
+                            <span>When does Cadence launch?</span>
+                            <svg class="faq-chevron w-4 h-4 text-stonebody transition-transform duration-200 rotate-180 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-panel px-6 pb-5 text-sm text-stonebody leading-relaxed">
+                            Cadence v1.0 launches within <strong class="font-medium text-ink js-launch-label">30 Days from Enrollment</strong>. Founding Members begin voice calibration in Weeks 1&ndash;2, receive early Private Beta access plus a 15-minute live setup call in Week 3, and transition seamlessly into the full public release in Week 4.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-card border border-hairline rounded-xl overflow-hidden">
+                        <button
+                            type="button"
+                            class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 text-sm sm:text-base font-semibold text-ink hover:bg-paper/60 transition-colors cursor-pointer"
+                            aria-expanded="false"
+                        >
+                            <span>When does my subscription actually start billing?</span>
+                            <svg class="faq-chevron w-4 h-4 text-stonebody transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-panel hidden px-6 pb-5 text-sm text-stonebody leading-relaxed">
+                            Your &euro;24.50 pre-order reserves your Cohort #1 spot and covers your entire first active month <em>starting on launch day</em>. You will not be billed a second month while we are calibrating your voice profile or running Private Beta.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-card border border-hairline rounded-xl overflow-hidden">
+                        <button
+                            type="button"
+                            class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 text-sm sm:text-base font-semibold text-ink hover:bg-paper/60 transition-colors cursor-pointer"
+                            aria-expanded="false"
+                        >
+                            <span>What if I want a refund before launch?</span>
+                            <svg class="faq-chevron w-4 h-4 text-stonebody transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-panel hidden px-6 pb-5 text-sm text-stonebody leading-relaxed">
+                            Simply reply to your confirmation email anytime before v1.0 launch (or if your Private Beta calibration doesn&rsquo;t sound unmistakably like you) and we will issue a 100% no-questions-asked refund to your card within 24 hours.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-card border border-hairline rounded-xl overflow-hidden">
+                        <button
+                            type="button"
+                            class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 text-sm sm:text-base font-semibold text-ink hover:bg-paper/60 transition-colors cursor-pointer"
+                            aria-expanded="false"
+                        >
+                            <span>How is this better than a Custom GPT?</span>
+                            <svg class="faq-chevron w-4 h-4 text-stonebody transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-panel hidden px-6 pb-5 text-sm text-stonebody leading-relaxed">
+                            Custom GPTs drift back toward generic internet defaults within a few messages, overusing buzzwords like &ldquo;delve,&rdquo; &ldquo;game-changer,&rdquo; and &ldquo;in today&rsquo;s landscape.&rdquo; Cadence runs a structured multi-pass Brand Voice Memory pipeline: it extracts your syntactic rhythm, enforces strict negative-phrase guardrails, retrieves matching past examples on every generation, and formats specifically for executive LinkedIn readability.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="bg-card border border-hairline rounded-xl overflow-hidden">
+                        <button
+                            type="button"
+                            class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 text-sm sm:text-base font-semibold text-ink hover:bg-paper/60 transition-colors cursor-pointer"
+                            aria-expanded="false"
+                        >
+                            <span>Is my company/client data kept private?</span>
+                            <svg class="faq-chevron w-4 h-4 text-stonebody transition-transform duration-200 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="faq-panel hidden px-6 pb-5 text-sm text-stonebody leading-relaxed">
+                            Yes. Your writing samples, memos, and Voice DNA profile are stored in an isolated per-user vault and processed strictly over zero-data-retention commercial API endpoints. Your proprietary insights are never used to train foundational models or shared across accounts.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Quiet Executive CTA Band -->
+        <section class="py-16 sm:py-20 bg-emeralddeep text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-xs font-semibold uppercase tracking-widest text-amber-200 mb-3">Cohort #1 Pre-Order Open</p>
+                <h2 class="font-serif text-4xl sm:text-5xl leading-[1.08] mb-5">
+                    Stay visible to CEOs without sounding like a robot&mdash;or losing your Sundays.
+                </h2>
+                <p class="text-sm sm:text-base text-emerald-100/90 max-w-xl mx-auto mb-8 leading-relaxed">
+                    Lock in &euro;24.50/month for life with hands-on voice calibration and a 100% pre-launch refund guarantee.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <button
+                        type="button"
+                        data-modal-mode="preorder"
+                        data-cta-source="final-band-preorder"
+                        class="open-modal-btn w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white hover:bg-paper text-ink font-semibold text-sm sm:text-base transition-colors cursor-pointer"
+                    >
+                        Reserve Founding Spot &mdash; &euro;24.50/mo
+                    </button>
+                    <button
+                        type="button"
+                        data-modal-mode="waitlist"
+                        data-cta-source="final-band-waitlist"
+                        class="open-modal-btn w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-900/60 hover:bg-emerald-900 text-emerald-50 border border-emerald-700/70 font-medium text-sm transition-colors cursor-pointer"
+                    >
+                        Or Join Public Waitlist
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================================
+         10. CLEAN FOOTER (5x Copyright Click or Ctrl+Shift+A Opens Analytics)
+         ========================================================================= -->
+    <footer class="bg-paper border-t border-hairline py-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stonebody">
+            <div class="flex items-center gap-2">
+                <span class="font-serif text-xl text-ink leading-none">Cadence<span class="text-emeralddeep">.</span></span>
+                <span class="text-stone-300">|</span>
+                <span>Brand Voice Memory Engine for Fractional Executives</span>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <span class="hidden sm:inline text-stone-400">Founding Cohort #1</span>
+                <p id="founder-tracker-trigger" class="select-none cursor-default">
+                    &copy; 2026 Cadence AI. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================================================
+         DUAL-MODE INTERACTIVE MODAL (FOUNDING PRE-ORDER + PUBLIC WAITLIST)
+         ========================================================================= -->
+    <div
+        id="enrollment-modal"
+        class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="enrollment-modal-title"
+    >
+        <!-- Backdrop -->
+        <div id="enrollment-modal-backdrop" class="fixed inset-0 bg-ink/55 backdrop-blur-[2px]"></div>
+
+        <!-- Modal Panel -->
+        <div class="relative z-10 w-full max-w-lg bg-card border border-hairline rounded-2xl shadow-editorial-lg overflow-hidden max-h-[92vh] overflow-y-auto">
+            <!-- Modal Header + Mode Switcher Tabs -->
+            <div class="px-6 pt-5 pb-4 bg-paper border-b border-hairline">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-baseline gap-1">
+                        <span class="font-serif text-2xl text-ink leading-none">Cadence</span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-emeralddeep inline-block"></span>
+                    </div>
+                    <button
+                        type="button"
+                        id="close-enrollment-modal"
+                        class="p-2 rounded-lg text-stonebody hover:text-ink hover:bg-stone-200/70 transition-colors cursor-pointer"
+                        aria-label="Close modal"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- 2 Clean Mode Tabs -->
+                <div class="grid grid-cols-2 p-1 bg-stone-200/70 rounded-xl" role="tablist">
+                    <button
+                        type="button"
+                        id="tab-btn-preorder"
+                        role="tab"
+                        aria-selected="true"
+                        class="modal-mode-tab py-2 px-3 rounded-lg text-xs sm:text-sm font-semibold bg-card text-ink shadow-sm transition-all cursor-pointer"
+                    >
+                        Founding Pre-Order (&euro;24.50)
+                    </button>
+                    <button
+                        type="button"
+                        id="tab-btn-waitlist"
+                        role="tab"
+                        aria-selected="false"
+                        class="modal-mode-tab py-2 px-3 rounded-lg text-xs sm:text-sm font-medium text-stonebody hover:text-ink transition-all cursor-pointer"
+                    >
+                        Public Waitlist (Free)
+                    </button>
+                </div>
+            </div>
+
+            <!-- ================= TAB 1: FOUNDING MEMBER PRE-ORDER ================= -->
+            <div id="panel-preorder" class="p-6 sm:p-7">
+                <!-- Pre-Order Form View -->
+                <div id="preorder-form-view">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gold-soft border border-gold-border text-[11px] font-semibold text-gold">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                            <span class="js-spots-remaining">14</span> of <span class="js-spots-total">20</span> Founding Spots Open
+                        </span>
+                        <span class="text-xs font-semibold text-emeralddeep">50% off locked for life</span>
+                    </div>
+
+                    <h3 id="enrollment-modal-title" class="font-serif text-3xl text-ink leading-tight mb-1.5">
+                        Reserve Your Founding Spot
+                    </h3>
+                    <p class="text-sm text-stonebody mb-5">
+                        Lock in &euro;24.50/month permanently plus 1-on-1 Brand Voice calibration before public launch.
+                    </p>
+
+                    <form id="preorder-form" class="space-y-4" novalidate>
+                        <div>
+                            <label for="po-name" class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1.5">
+                                Full Name <span class="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="po-name"
+                                name="fullName"
+                                required
+                                autocomplete="name"
+                                placeholder="e.g., Claire Lindqvist"
+                                class="w-full px-3.5 py-2.5 text-sm text-ink bg-card border border-hairline rounded-xl focus:outline-none focus:ring-2 focus:ring-emeralddeep/20 focus:border-emeralddeep transition-all"
+                            />
+                            <p id="po-name-error" class="hidden mt-1 text-xs text-red-700 font-medium">Please enter your full name.</p>
+                        </div>
+
+                        <div>
+                            <label for="po-email" class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1.5">
+                                Work Email <span class="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="po-email"
+                                name="email"
+                                required
+                                autocomplete="email"
+                                placeholder="name@advisoryfirm.com"
+                                class="w-full px-3.5 py-2.5 text-sm text-ink bg-card border border-hairline rounded-xl focus:outline-none focus:ring-2 focus:ring-emeralddeep/20 focus:border-emeralddeep transition-all"
+                            />
+                            <p id="po-email-error" class="hidden mt-1 text-xs text-red-700 font-medium">Please enter a valid work email address.</p>
+                        </div>
+
+                        <div>
+                            <label for="po-role" class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1.5">
+                                Executive Role
+                            </label>
+                            <select
+                                id="po-role"
+                                name="role"
+                                class="w-full px-3.5 py-2.5 text-sm text-ink bg-card border border-hairline rounded-xl focus:outline-none focus:ring-2 focus:ring-emeralddeep/20 focus:border-emeralddeep transition-all"
+                            >
+                                <option value="Fractional CFO">Fractional CFO</option>
+                                <option value="Fractional CMO">Fractional CMO</option>
+                                <option value="Fractional CTO">Fractional CTO</option>
+                                <option value="Fractional COO">Fractional COO</option>
+                                <option value="Boutique Agency Owner">Boutique Agency Owner</option>
+                                <option value="Management Consultant">Management Consultant</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="po-linkedin" class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1.5">
+                                LinkedIn Profile URL <span class="font-normal normal-case text-stonebody">(Optional &mdash; speeds up voice calibration)</span>
+                            </label>
+                            <input
+                                type="url"
+                                id="po-linkedin"
+                                name="linkedinUrl"
+                                placeholder="https://linkedin.com/in/yourprofile"
+                                class="w-full px-3.5 py-2.5 text-sm text-ink bg-card border border-hairline rounded-xl focus:outline-none focus:ring-2 focus:ring-emeralddeep/20 focus:border-emeralddeep transition-all"
+                            />
+                        </div>
+
+                        <!-- Clear Trust Guarantee Box -->
+                        <div class="bg-emeralddeep-soft/70 border border-emeralddeep-border rounded-xl p-3.5 flex items-start gap-2.5 text-xs text-emeralddeep leading-relaxed">
+                            <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                            <span><strong class="font-semibold">100% refundable anytime before launch.</strong> Your first month starts on launch day.</span>
+                        </div>
+
+                        <button
+                            type="submit"
+                            id="po-submit-btn"
+                            class="w-full py-3.5 px-5 rounded-xl bg-emeralddeep hover:bg-emeralddeep-hover text-white font-semibold text-sm sm:text-base transition-all shadow-sm cursor-pointer"
+                        >
+                            Continue to Secure Stripe Checkout &rarr;
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Pre-Order Confirmation View (Handles both Stripe Connected & Stripe Not Set gracefully) -->
+                <div id="preorder-success-view" class="hidden text-center py-3">
+                    <div class="w-12 h-12 rounded-full bg-emeralddeep-soft border border-emeralddeep-border text-emeralddeep flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+
+                    <p id="po-success-kicker" class="text-xs font-semibold uppercase tracking-wider text-emeralddeep mb-1.5">
+                        Founding Spot Reserved
+                    </p>
+                    <h3 id="po-success-heading" class="font-serif text-3xl text-ink mb-3">
+                        Founding Spot Reserved &mdash; Payment Link Sent by Email
+                    </h3>
+                    <p id="po-success-body" class="text-sm text-stonebody leading-relaxed mb-6">
+                        <!-- Dynamically set depending on whether STRIPE_PAYMENT_LINK is configured -->
+                    </p>
+
+                    <!-- Fallback Direct Stripe Button (shown when STRIPE_PAYMENT_LINK is configured) -->
+                    <a
+                        id="po-stripe-direct-link"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hidden mb-3 w-full inline-flex items-center justify-center gap-2 py-3.5 px-5 rounded-xl bg-emeralddeep hover:bg-emeralddeep-hover text-white font-semibold text-sm transition-colors"
+                    >
+                        Open Secure Stripe Checkout Now &rarr;
+                    </a>
+
+                    <button
+                        type="button"
+                        class="close-modal-done w-full py-3 px-5 rounded-xl bg-paper hover:bg-stone-200/70 border border-hairline text-ink font-medium text-sm transition-colors cursor-pointer"
+                    >
+                        Return to Page
+                    </button>
+                </div>
+            </div>
+
+            <!-- ================= TAB 2: PUBLIC WAITLIST (FREE) ================= -->
+            <div id="panel-waitlist" class="hidden p-6 sm:p-7">
+                <!-- Waitlist Form View -->
+                <div id="waitlist-form-view">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-stonebody mb-1.5">Standard Public Launch (&euro;49/mo)</p>
+                    <h3 class="font-serif text-3xl text-ink leading-tight mb-2">
+                        Get Notified When Doors Open
+                    </h3>
+                    <p class="text-sm text-stonebody leading-relaxed mb-5">
+                        Not ready to pre-order today? Leave your work email and we will send one clean note when Cadence v1.0 opens publicly.
+                    </p>
+
+                    <form id="waitlist-form" class="space-y-4" novalidate>
+                        <div>
+                            <label for="wl-email" class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1.5">
+                                Work Email <span class="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="wl-email"
+                                name="email"
+                                required
+                                autocomplete="email"
+                                placeholder="name@company.com"
+                                class="w-full px-3.5 py-2.5 text-sm text-ink bg-card border border-hairline rounded-xl focus:outline-none focus:ring-2 focus:ring-emeralddeep/20 focus:border-emeralddeep transition-all"
+                            />
+                            <p id="wl-email-error" class="hidden mt-1 text-xs text-red-700 font-medium">Please enter a valid work email address.</p>
+                        </div>
+
+                        <div>
+                            <label for="wl-role" class="block text-xs font-semibold uppercase tracking-wider text-ink mb-1.5">
+                                Executive Role
+                            </label>
+                            <select
+                                id="wl-role"
+                                name="role"
+                                class="w-full px-3.5 py-2.5 text-sm text-ink bg-card border border-hairline rounded-xl focus:outline-none focus:ring-2 focus:ring-emeralddeep/20 focus:border-emeralddeep transition-all"
+                            >
+                                <option value="Fractional CFO">Fractional CFO</option>
+                                <option value="Fractional CMO">Fractional CMO</option>
+                                <option value="Fractional CTO">Fractional CTO</option>
+                                <option value="Fractional COO">Fractional COO</option>
+                                <option value="Boutique Agency Owner">Boutique Agency Owner</option>
+                                <option value="Management Consultant">Management Consultant</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <button
+                            type="submit"
+                            id="wl-submit-btn"
+                            class="w-full py-3.5 px-5 rounded-xl bg-ink hover:bg-stone-800 text-white font-semibold text-sm sm:text-base transition-colors cursor-pointer"
+                        >
+                            Notify Me at Public Launch
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Waitlist Confirmation View -->
+                <div id="waitlist-success-view" class="hidden text-center py-3">
+                    <div class="w-12 h-12 rounded-full bg-emeralddeep-soft border border-emeralddeep-border text-emeralddeep flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-emeralddeep mb-1.5">Waitlist Confirmed</p>
+                    <h3 class="font-serif text-3xl text-ink mb-3">You&rsquo;re on the Launch List</h3>
+                    <p class="text-sm text-stonebody leading-relaxed mb-6">
+                        We&rsquo;ve added <strong id="wl-confirmed-email" class="text-ink font-semibold"></strong> to the Cadence v1.0 announcement list. You&rsquo;ll hear from us as soon as public doors open.
+                    </p>
+                    <button
+                        type="button"
+                        class="close-modal-done w-full py-3 px-5 rounded-xl bg-paper hover:bg-stone-200/70 border border-hairline text-ink font-medium text-sm transition-colors cursor-pointer"
+                    >
+                        Return to Page
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         BUILT-IN FOUNDER VALIDATION TRACKER MODAL (Ctrl+Shift+A or 5x Footer Click)
+         ========================================================================= -->
+    <div id="founder-tracker-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+        <div id="founder-tracker-backdrop" class="fixed inset-0 bg-ink/60 backdrop-blur-[2px]"></div>
+
+        <div class="relative z-10 w-full max-w-3xl bg-card border border-hairline rounded-2xl shadow-editorial-lg p-6 sm:p-7 max-h-[90vh] overflow-y-auto">
+            <!-- Header -->
+            <div class="flex items-start justify-between gap-4 pb-4 mb-5 border-b border-hairline">
+                <div>
+                    <h3 class="font-serif text-2xl sm:text-3xl text-ink leading-tight">Founder Validation Tracker</h3>
+                    <p class="text-xs text-stonebody mt-0.5">Local browser validation metrics &amp; launch readiness status (Ctrl + Shift + A)</p>
+                </div>
+                <button
+                    type="button"
+                    id="close-founder-tracker"
+                    class="p-2 rounded-lg text-stonebody hover:text-ink hover:bg-stone-100 cursor-pointer"
+                    aria-label="Close tracker"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+
+            <!-- Configuration Readiness Indicators -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                <div id="status-stripe-box" class="p-4 rounded-xl border text-xs">
+                    <!-- Populated via JS -->
+                </div>
+                <div id="status-formspree-box" class="p-4 rounded-xl border text-xs">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+
+            <!-- Validation Funnel Metrics -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-6">
+                <div class="p-3 bg-paper border border-hairline rounded-xl text-center">
+                    <p class="text-[10px] font-semibold uppercase tracking-wider text-stonebody">Page Views</p>
+                    <p id="metric-views" class="text-xl font-bold text-ink mt-1 tabular-nums">0</p>
+                </div>
+                <div class="p-3 bg-paper border border-hairline rounded-xl text-center">
+                    <p class="text-[10px] font-semibold uppercase tracking-wider text-stonebody">Modal Opens</p>
+                    <p id="metric-opens" class="text-xl font-bold text-ink mt-1 tabular-nums">0</p>
+                </div>
+                <div class="p-3 bg-paper border border-hairline rounded-xl text-center">
+                    <p class="text-[10px] font-semibold uppercase tracking-wider text-stonebody">Pre-Orders</p>
+                    <p id="metric-preorders" class="text-xl font-bold text-emeralddeep mt-1 tabular-nums">0</p>
+                </div>
+                <div class="p-3 bg-paper border border-hairline rounded-xl text-center">
+                    <p class="text-[10px] font-semibold uppercase tracking-wider text-stonebody">Waitlist</p>
+                    <p id="metric-waitlist" class="text-xl font-bold text-ink mt-1 tabular-nums">0</p>
+                </div>
+                <div class="p-3 bg-paper border border-hairline rounded-xl text-center">
+                    <p class="text-[10px] font-semibold uppercase tracking-wider text-stonebody">Pre-Order %</p>
+                    <p id="metric-preorder-rate" class="text-xl font-bold text-emeralddeep mt-1 tabular-nums">0%</p>
+                </div>
+                <div class="p-3 bg-paper border border-hairline rounded-xl text-center">
+                    <p class="text-[10px] font-semibold uppercase tracking-wider text-stonebody">Waitlist %</p>
+                    <p id="metric-waitlist-rate" class="text-xl font-bold text-gold mt-1 tabular-nums">0%</p>
+                </div>
+            </div>
+
+            <!-- Captured Leads Table -->
+            <div class="mb-5">
+                <div class="flex items-center justify-between mb-2">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-ink">Captured Leads (Local Storage)</p>
+                    <span id="tracker-copy-feedback" class="hidden text-xs font-semibold text-emeralddeep">CSV copied to clipboard!</span>
+                </div>
+                <div class="border border-hairline rounded-xl overflow-x-auto max-h-56">
+                    <table class="w-full text-left text-xs border-collapse">
+                        <thead class="bg-paper border-b border-hairline text-stonebody">
+                            <tr>
+                                <th class="py-2.5 px-3 font-semibold">Type</th>
+                                <th class="py-2.5 px-3 font-semibold">Lead Details</th>
+                                <th class="py-2.5 px-3 font-semibold">Role</th>
+                                <th class="py-2.5 px-3 font-semibold">Source</th>
+                                <th class="py-2.5 px-3 font-semibold">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tracker-leads-tbody" class="divide-y divide-hairline bg-card">
+                            <tr>
+                                <td colspan="5" class="py-6 px-3 text-center text-stonebody">No leads recorded in this browser yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-hairline">
+                <button
+                    type="button"
+                    id="tracker-copy-csv"
+                    class="px-4 py-2 text-xs font-semibold rounded-lg bg-emeralddeep hover:bg-emeralddeep-hover text-white transition-colors cursor-pointer"
+                >
+                    Copy CSV
+                </button>
+
+                <button
+                    type="button"
+                    id="tracker-reset-data"
+                    class="px-4 py-2 text-xs font-semibold rounded-lg border border-red-200 text-red-700 hover:bg-red-50 transition-colors cursor-pointer"
+                >
+                    Reset Test Data
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         APPLICATION LOGIC & CONFIGURATION
+         ========================================================================= -->
+    <script>
+        /* =========================================================================
+           EASY FOUNDER CONFIGURATION BLOCK (EDIT THESE 5 VALUES ONLY)
+           ========================================================================= */
+        const STRIPE_PAYMENT_LINK = ""; // Paste your Stripe Payment Link URL here (e.g., https://buy.stripe.com/xxxx)
+        const FORMSPREE_ENDPOINT = "";  // Optional: Paste your Formspree URL to save pre-order & waitlist leads
+        const FOUNDING_SPOTS_TOTAL = 20;
+        const FOUNDING_SPOTS_REMAINING = 14; // Update manually as real spots fill
+        const LAUNCH_DATE_LABEL = "30 Days from Enrollment";
+
+
+        /* =========================================================================
+           1. INTERACTIVE EXECUTIVE VOICE COMPARISON DATA
+           ========================================================================= */
+        const VOICE_EXAMPLES = {
+            cfo: {
+                inputNote: '"Why Series A founders run out of cash 4 months earlier than their board deck predicts."',
+                avatar: "MV",
+                name: "Marcus Vance",
+                headline: "Fractional CFO · B2B SaaS (€2M–€20M ARR)",
+                meta: "Calibrated from 4 past memos",
+                chatgpt: `In today's fast-paced startup landscape, cash flow is truly king! 🚀
+
+Many Series A founders are shocked when their runway shrinks faster than expected. Let's dive into 3 game-changing takeaways every leader needs to remember:
+
+1️⃣ Always monitor your burn rate closely!
+2️⃣ Factor in hidden hiring costs and churn!
+3️⃣ Build a financial cushion before you need it!
+
+Remember: revenue is vanity, profit is sanity, cash is reality! 💡 What are your thoughts on managing startup runway? Drop a comment below! 👇
+
+#StartupFinance #CFO #CashFlow #Leadership #SaaS`,
+                cadence: `Most Series A board decks overestimate runway by 3 to 4 months.
+
+Not because the founder lied. Because the model tracked bookings instead of cash collection.
+
+Here is where the gap actually hides when I audit a €5M ARR SaaS company:
+
+- Annual upfront contracts drop from 70% to 35% as you move upmarket.
+- Enterprise net-60 terms quietly stretch to net-95 in Q4.
+- Fully loaded headcount sits 22% above base salary once payroll taxes and tooling land.
+
+Your P&L can look completely healthy right up until payroll gets tight.
+
+If you don't run a rolling 13-week cash forecast tied strictly to bank-cleared revenue, you don't actually know your zero-cash date.`,
+                voiceDna: [
+                    "Sentence rhythm: Short punchy openers",
+                    "Tone: Direct & analytical",
+                    "Zero buzzwords"
+                ]
+            },
+            cmo: {
+                inputNote: '"Why hiring a full-time VP of Marketing at €1.5M ARR usually fails inside 9 months."',
+                avatar: "ER",
+                name: "Elena Rostova",
+                headline: "Fractional CMO · Enterprise & B2B Software",
+                meta: "Calibrated from 5 past posts",
+                chatgpt: `Are you thinking about scaling your marketing team? 🌟 Let's delve into a crucial growth milestone!
+
+In today's hyper-competitive B2B ecosystem, hiring a full-time VP of Marketing at €1.5M ARR might seem like a total game-changer—but it can sometimes backfire! 😬
+
+Here are 3 key reasons why timing is everything:
+✨ Strategy needs to align with execution
+✨ Budget constraints can limit impact
+✨ Alignment with sales unlocks unstoppable growth!
+
+Have you experienced this in your founder journey? Let's discuss in the comments! 👇🔥
+
+#MarketingLeadership #B2BGrowth #CMO #ScaleUp`,
+                cadence: `Hiring a €180k VP of Marketing at €1.5M ARR is the most expensive mistake I see B2B founders make.
+
+They don't fail because they're weak marketers. They fail because you hired an architect when you still need a builder.
+
+At €1.5M ARR, you rarely have:
+1. A repeatable ICP that closes without the founder in the room.
+2. Enough working budget to fund both an executive salary and real pipeline tests.
+3. Clean attribution separating warm founder referrals from cold demand.
+
+So your new VP spends six months polishing positioning decks while pipeline stays flat. By month nine, both sides are frustrated.
+
+Rent senior leadership for one day a week. Put the other €120k directly into distribution.`,
+                voiceDna: [
+                    "Structure: Contrarian thesis + numbered proof",
+                    "Tone: Pragmatic & unsentimental",
+                    "Zero buzzwords"
+                ]
+            },
+            cto: {
+                inputNote: '"Why rewriting legacy code from scratch before Series B destroys product velocity."',
+                avatar: "DK",
+                name: "David Koster",
+                headline: "Fractional CTO · FinTech & Regulated SaaS",
+                meta: "Calibrated from 3 engineering briefs",
+                chatgpt: `Technical debt is a silent killer in today's rapidly evolving tech landscape! 💻⚡
+
+Every engineering leader has been tempted to do a complete ground-up rewrite. While it sounds exciting, let's dive into why patience is a true superpower:
+
+🚀 Rewrites almost always take 2x longer than planned
+🚀 Customers care about value, not shiny microservices
+🚀 Incremental refactoring is the ultimate win-win!
+
+Great CTOs always balance innovation with business outcomes. 🙌 Agree or disagree? Share your engineering war stories below! 👇
+
+#TechLeadership #CTO #SoftwareEngineering #DevOps`,
+                cadence: `Every time a newly hired engineering lead proposes a "6-month ground-up rewrite," I ask one question:
+
+Which two enterprise renewals are you willing to lose while the product roadmap freezes?
+
+The legacy monolith is messy. Everyone knows it. It also processes 100% of your paying customers and quietly handles three years of undocumented edge cases your team has already forgotten.
+
+When I step into a €4M SaaS org, I almost never sign off on a full rewrite.
+
+Instead:
+- Isolate the single bottleneck causing 80% of production incidents.
+- Place a clean API boundary in front of it.
+- Replace the old module incrementally while still shipping customer features every Friday.
+
+Clean architecture is a tool for commercial speed, not an art project.`,
+                voiceDna: [
+                    "Opener: Socratic boardroom question",
+                    "Tone: Calm systems operator",
+                    "Zero buzzwords"
+                ]
+            }
+        };
+
+
+        /* =========================================================================
+           2. LOCAL VALIDATION ANALYTICS ENGINE (LOCALSTORAGE)
+           ========================================================================= */
+        const METRICS_STORAGE_KEY = "cadence_preorder_validation_v1";
+
+        function loadMetrics() {
+            try {
+                const raw = localStorage.getItem(METRICS_STORAGE_KEY);
+                if (raw) {
+                    const parsed = JSON.parse(raw);
+                    return {
+                        pageViews: Number(parsed.pageViews) || 0,
+                        modalOpens: Number(parsed.modalOpens) || 0,
+                        leads: Array.isArray(parsed.leads) ? parsed.leads : []
+                    };
+                }
+            } catch (err) {
+                console.warn("Unable to read localStorage metrics:", err);
+            }
+            return { pageViews: 0, modalOpens: 0, leads: [] };
+        }
+
+        function saveMetrics(data) {
+            try {
+                localStorage.setItem(METRICS_STORAGE_KEY, JSON.stringify(data));
+            } catch (err) {
+                console.warn("Unable to save localStorage metrics:", err);
+            }
+        }
+
+        function recordPageView() {
+            const m = loadMetrics();
+            m.pageViews += 1;
+            saveMetrics(m);
+        }
+
+        function recordModalOpen() {
+            const m = loadMetrics();
+            m.modalOpens += 1;
+            saveMetrics(m);
+        }
+
+        function recordLead(leadObj) {
+            const m = loadMetrics();
+            m.leads.push(leadObj);
+            saveMetrics(m);
+        }
+
+
+        /* =========================================================================
+           3. HELPER FUNCTIONS
+           ========================================================================= */
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function buildStripeCheckoutUrl(baseUrl, email) {
+            const trimmed = (baseUrl || "").trim();
+            if (!trimmed) return "";
+            const separator = trimmed.includes("?") ? "&" : "?";
+            return `${trimmed}${separator}prefilled_email=${encodeURIComponent(email)}`;
+        }
+
+        async function sendToFormspree(payload) {
+            const endpoint = (FORMSPREE_ENDPOINT || "").trim();
+            if (!endpoint) return { sent: false };
+
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) {
+                throw new Error(`Formspree returned status ${response.status}`);
+            }
+            return { sent: true };
+        }
+
+
+        /* =========================================================================
+           4. DOM INITIALIZATION & INTERACTIVE FEATURES
+           ========================================================================= */
+        document.addEventListener("DOMContentLoaded", () => {
+            // Track page view for Founder Validation Funnel
+            recordPageView();
+
+            // Inject Dynamic Config Constants Throughout the DOM
+            document.querySelectorAll(".js-spots-total").forEach((el) => {
+                el.textContent = String(FOUNDING_SPOTS_TOTAL);
+            });
+            document.querySelectorAll(".js-spots-remaining").forEach((el) => {
+                el.textContent = String(FOUNDING_SPOTS_REMAINING);
+            });
+            document.querySelectorAll(".js-launch-label").forEach((el) => {
+                el.textContent = LAUNCH_DATE_LABEL;
+            });
+
+            // -----------------------------------------------------------------
+            // Mobile Navigation Menu
+            // -----------------------------------------------------------------
+            const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            mobileMenuToggle.addEventListener("click", () => {
+                const isHidden = mobileMenu.classList.toggle("hidden");
+                mobileMenuToggle.setAttribute("aria-expanded", String(!isHidden));
+            });
+
+            document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+                link.addEventListener("click", () => {
+                    mobileMenu.classList.add("hidden");
+                    mobileMenuToggle.setAttribute("aria-expanded", "false");
+                });
+            });
+
+            // -----------------------------------------------------------------
+            // Interactive Voice Comparison Tabs (CFO / CMO / CTO)
+            // -----------------------------------------------------------------
+            const roleTabs = document.querySelectorAll(".role-tab");
+            const elInputNote = document.getElementById("showcase-input-note");
+            const elGptAvatar = document.getElementById("gpt-avatar");
+            const elGptName = document.getElementById("gpt-name");
+            const elGptHeadline = document.getElementById("gpt-headline");
+            const elGptPost = document.getElementById("gpt-post");
+            const elCadAvatar = document.getElementById("cadence-avatar");
+            const elCadName = document.getElementById("cadence-name");
+            const elCadHeadline = document.getElementById("cadence-headline");
+            const elCadMeta = document.getElementById("cadence-meta");
+            const elCadPost = document.getElementById("cadence-post");
+            const elVoiceDnaContainer = document.getElementById("voice-dna-tags");
+
+            function renderVoiceExample(roleKey) {
+                const data = VOICE_EXAMPLES[roleKey] || VOICE_EXAMPLES.cfo;
+                elInputNote.textContent = data.inputNote;
+
+                elGptAvatar.textContent = data.avatar;
+                elGptName.textContent = data.name;
+                elGptHeadline.textContent = data.headline;
+                elGptPost.textContent = data.chatgpt;
+
+                elCadAvatar.textContent = data.avatar;
+                elCadName.textContent = data.name;
+                elCadHeadline.textContent = data.headline;
+                elCadMeta.textContent = data.meta;
+                elCadPost.textContent = data.cadence;
+
+                // Render Voice DNA Tags safely
+                elVoiceDnaContainer.innerHTML = "";
+                data.voiceDna.forEach((tag) => {
+                    const span = document.createElement("span");
+                    span.className = "inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-md bg-emeralddeep-soft border border-emeralddeep-border text-emeralddeep";
+                    span.textContent = tag;
+                    elVoiceDnaContainer.appendChild(span);
+                });
+
+                // Update active tab appearance
+                roleTabs.forEach((tab) => {
+                    const isActive = tab.dataset.role === roleKey;
+                    tab.setAttribute("aria-selected", String(isActive));
+                    if (isActive) {
+                        tab.classList.add("bg-card", "text-ink", "shadow-sm");
+                        tab.classList.remove("text-stonebody");
+                    } else {
+                        tab.classList.remove("bg-card", "text-ink", "shadow-sm");
+                        tab.classList.add("text-stonebody");
+                    }
+                });
+            }
+
+            roleTabs.forEach((tab) => {
+                tab.addEventListener("click", () => renderVoiceExample(tab.dataset.role));
+            });
+            renderVoiceExample("cfo");
+
+            // -----------------------------------------------------------------
+            // Interactive Executive ROI Calculator
+            // -----------------------------------------------------------------
+            const sliderRate = document.getElementById("slider-hourly-rate");
+            const sliderHours = document.getElementById("slider-weekly-hours");
+            const displayRate = document.getElementById("display-hourly-rate");
+            const displayHours = document.getElementById("display-weekly-hours");
+            const displayMonthlyValue = document.getElementById("display-monthly-value");
+            const displayRoiMultiplier = document.getElementById("display-roi-multiplier");
+            const roiBadge = document.getElementById("roi-badge");
+
+            const FOUNDING_PRICE_EUR = 24.5;
+
+            function updateRoiCalculator() {
+                const rate = Number(sliderRate.value);
+                const weeklyHours = Number(sliderHours.value);
+                const monthlyValue = Math.round(rate * weeklyHours * 4);
+                const roiMultiple = Math.max(1, Math.floor(monthlyValue / FOUNDING_PRICE_EUR));
+
+                displayRate.textContent = `€${rate}/hr`;
+                displayHours.textContent = `${weeklyHours} ${weeklyHours === 1 ? "hr" : "hrs"}/wk`;
+                displayMonthlyValue.textContent = `€${monthlyValue.toLocaleString("en-IE")}/mo`;
+                displayRoiMultiplier.textContent = `${roiMultiple}x return on time`;
+                roiBadge.textContent = `${roiMultiple}x return on time`;
+            }
+
+            sliderRate.addEventListener("input", updateRoiCalculator);
+            sliderHours.addEventListener("input", updateRoiCalculator);
+            updateRoiCalculator();
+
+            // -----------------------------------------------------------------
+            // 5-Item Executive FAQ Accordion
+            // -----------------------------------------------------------------
+            document.querySelectorAll(".faq-trigger").forEach((trigger) => {
+                trigger.addEventListener("click", () => {
+                    const panel = trigger.nextElementSibling;
+                    const chevron = trigger.querySelector(".faq-chevron");
+                    const isExpanded = trigger.getAttribute("aria-expanded") === "true";
+
+                    trigger.setAttribute("aria-expanded", String(!isExpanded));
+                    panel.classList.toggle("hidden", isExpanded);
+                    chevron.classList.toggle("rotate-180", !isExpanded);
+                });
+            });
+
+            // -----------------------------------------------------------------
+            // Dual-Mode Enrollment Modal (Pre-Order & Waitlist)
+            // -----------------------------------------------------------------
+            const enrollmentModal = document.getElementById("enrollment-modal");
+            const enrollmentBackdrop = document.getElementById("enrollment-modal-backdrop");
+            const closeEnrollmentBtn = document.getElementById("close-enrollment-modal");
+            const tabBtnPreorder = document.getElementById("tab-btn-preorder");
+            const tabBtnWaitlist = document.getElementById("tab-btn-waitlist");
+            const panelPreorder = document.getElementById("panel-preorder");
+            const panelWaitlist = document.getElementById("panel-waitlist");
+
+            const preorderFormView = document.getElementById("preorder-form-view");
+            const preorderSuccessView = document.getElementById("preorder-success-view");
+            const preorderForm = document.getElementById("preorder-form");
+            const poNameInput = document.getElementById("po-name");
+            const poEmailInput = document.getElementById("po-email");
+            const poRoleSelect = document.getElementById("po-role");
+            const poLinkedinInput = document.getElementById("po-linkedin");
+            const poNameError = document.getElementById("po-name-error");
+            const poEmailError = document.getElementById("po-email-error");
+            const poSubmitBtn = document.getElementById("po-submit-btn");
+            const poSuccessKicker = document.getElementById("po-success-kicker");
+            const poSuccessHeading = document.getElementById("po-success-heading");
+            const poSuccessBody = document.getElementById("po-success-body");
+            const poStripeDirectLink = document.getElementById("po-stripe-direct-link");
+
+            const waitlistFormView = document.getElementById("waitlist-form-view");
+            const waitlistSuccessView = document.getElementById("waitlist-success-view");
+            const waitlistForm = document.getElementById("waitlist-form");
+            const wlEmailInput = document.getElementById("wl-email");
+            const wlRoleSelect = document.getElementById("wl-role");
+            const wlEmailError = document.getElementById("wl-email-error");
+            const wlSubmitBtn = document.getElementById("wl-submit-btn");
+            const wlConfirmedEmail = document.getElementById("wl-confirmed-email");
+
+            let currentCtaSource = "direct";
+
+            function switchModalTab(mode) {
+                const isPreorder = mode !== "waitlist";
+
+                panelPreorder.classList.toggle("hidden", !isPreorder);
+                panelWaitlist.classList.toggle("hidden", isPreorder);
+
+                tabBtnPreorder.setAttribute("aria-selected", String(isPreorder));
+                tabBtnWaitlist.setAttribute("aria-selected", String(!isPreorder));
+
+                if (isPreorder) {
+                    tabBtnPreorder.classList.add("bg-card", "text-ink", "shadow-sm", "font-semibold");
+                    tabBtnPreorder.classList.remove("text-stonebody", "font-medium");
+                    tabBtnWaitlist.classList.remove("bg-card", "text-ink", "shadow-sm", "font-semibold");
+                    tabBtnWaitlist.classList.add("text-stonebody", "font-medium");
+                } else {
+                    tabBtnWaitlist.classList.add("bg-card", "text-ink", "shadow-sm", "font-semibold");
+                    tabBtnWaitlist.classList.remove("text-stonebody", "font-medium");
+                    tabBtnPreorder.classList.remove("bg-card", "text-ink", "shadow-sm", "font-semibold");
+                    tabBtnPreorder.classList.add("text-stonebody", "font-medium");
+                }
+            }
+
+            function openEnrollmentModal(mode, source) {
+                currentCtaSource = source || "cta";
+                recordModalOpen();
+
+                // Reset views & errors cleanly
+                preorderFormView.classList.remove("hidden");
+                preorderSuccessView.classList.add("hidden");
+                waitlistFormView.classList.remove("hidden");
+                waitlistSuccessView.classList.add("hidden");
+                poNameError.classList.add("hidden");
+                poEmailError.classList.add("hidden");
+                wlEmailError.classList.add("hidden");
+
+                switchModalTab(mode || "preorder");
+
+                enrollmentModal.classList.remove("hidden");
+                enrollmentModal.classList.add("flex");
+                document.body.classList.add("overflow-hidden");
+
+                setTimeout(() => {
+                    if (mode === "waitlist") {
+                        wlEmailInput.focus();
+                    } else {
+                        poNameInput.focus();
+                    }
+                }, 60);
+            }
+
+            function closeEnrollmentModal() {
+                enrollmentModal.classList.add("hidden");
+                enrollmentModal.classList.remove("flex");
+                document.body.classList.remove("overflow-hidden");
+            }
+
+            document.querySelectorAll(".open-modal-btn").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    openEnrollmentModal(btn.dataset.modalMode, btn.dataset.ctaSource);
+                });
+            });
+
+            tabBtnPreorder.addEventListener("click", () => switchModalTab("preorder"));
+            tabBtnWaitlist.addEventListener("click", () => switchModalTab("waitlist"));
+            closeEnrollmentBtn.addEventListener("click", closeEnrollmentModal);
+            enrollmentBackdrop.addEventListener("click", closeEnrollmentModal);
+            document.querySelectorAll(".close-modal-done").forEach((btn) => {
+                btn.addEventListener("click", closeEnrollmentModal);
+            });
+
+            // -----------------------------------------------------------------
+            // Submit Handler: Tab 1 — Founding Member Pre-Order
+            // -----------------------------------------------------------------
+            preorderForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const fullName = poNameInput.value.trim();
+                const email = poEmailInput.value.trim();
+                const role = poRoleSelect.value;
+                const linkedinUrl = poLinkedinInput.value.trim();
+
+                let hasError = false;
+                if (!fullName) {
+                    poNameError.classList.remove("hidden");
+                    hasError = true;
+                } else {
+                    poNameError.classList.add("hidden");
+                }
+
+                if (!isValidEmail(email)) {
+                    poEmailError.classList.remove("hidden");
+                    hasError = true;
+                } else {
+                    poEmailError.classList.add("hidden");
+                }
+
+                if (hasError) return;
+
+                const originalBtnText = poSubmitBtn.textContent;
+                poSubmitBtn.disabled = true;
+                poSubmitBtn.classList.add("opacity-75", "cursor-not-allowed");
+                poSubmitBtn.textContent = "Reserving your founding spot...";
+
+                const leadPayload = {
+                    type: "founding_preorder",
+                    fullName,
+                    email,
+                    role,
+                    linkedinUrl: linkedinUrl || "",
+                    ctaSource: currentCtaSource,
+                    offer: "Founding Member Pre-Order — €24.50/mo locked for life",
+                    timestamp: new Date().toISOString()
+                };
+
+                try {
+                    await sendToFormspree(leadPayload);
+                } catch (err) {
+                    console.warn("Formspree submission error (lead still stored locally):", err);
+                } finally {
+                    recordLead(leadPayload);
+                }
+
+                // Check if STRIPE_PAYMENT_LINK is configured
+                const stripeCheckoutUrl = buildStripeCheckoutUrl(STRIPE_PAYMENT_LINK, email);
+
+                if (stripeCheckoutUrl) {
+                    // Connected Stripe Mode: open checkout cleanly + show confirmation with direct fallback link
+                    poSuccessKicker.textContent = "Step 2 of 2 · Secure Stripe Checkout";
+                    poSuccessHeading.textContent = "Complete Your Founding Reservation";
+                    poSuccessBody.textContent = `We've opened Stripe Checkout for ${email} with your founding rate (€24.50/mo locked for life, 100% refundable before launch). If the checkout tab did not open automatically, click the button below.`;
+                    poStripeDirectLink.href = stripeCheckoutUrl;
+                    poStripeDirectLink.classList.remove("hidden");
+
+                    preorderFormView.classList.add("hidden");
+                    preorderSuccessView.classList.remove("hidden");
+                    preorderForm.reset();
+
+                    try {
+                        window.open(stripeCheckoutUrl, "_blank", "noopener,noreferrer");
+                    } catch (err) {
+                        console.warn("Popup blocked; fallback button is visible:", err);
+                    }
+                } else {
+                    // Graceful Unconfigured Mode: never show a broken error to a prospective buyer
+                    poSuccessKicker.textContent = "Cohort #1 Spot Held";
+                    poSuccessHeading.textContent = "Founding Spot Reserved — Payment Link Sent by Email";
+                    poSuccessBody.textContent = `Thank you, ${fullName}. We have reserved your Cohort #1 founding rate (€24.50/mo locked for life) under ${email}. Our founder will email your direct Stripe checkout link and 1-on-1 voice calibration calendar within 24 hours.`;
+                    poStripeDirectLink.classList.add("hidden");
+
+                    preorderFormView.classList.add("hidden");
+                    preorderSuccessView.classList.remove("hidden");
+                    preorderForm.reset();
+                }
+
+                poSubmitBtn.disabled = false;
+                poSubmitBtn.classList.remove("opacity-75", "cursor-not-allowed");
+                poSubmitBtn.textContent = originalBtnText;
+            });
+
+            // -----------------------------------------------------------------
+            // Submit Handler: Tab 2 — Public Launch Waitlist
+            // -----------------------------------------------------------------
+            waitlistForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const email = wlEmailInput.value.trim();
+                const role = wlRoleSelect.value;
+
+                if (!isValidEmail(email)) {
+                    wlEmailError.classList.remove("hidden");
+                    wlEmailInput.focus();
+                    return;
+                }
+                wlEmailError.classList.add("hidden");
+
+                const originalBtnText = wlSubmitBtn.textContent;
+                wlSubmitBtn.disabled = true;
+                wlSubmitBtn.classList.add("opacity-75", "cursor-not-allowed");
+                wlSubmitBtn.textContent = "Joining launch waitlist...";
+
+                const leadPayload = {
+                    type: "waitlist",
+                    fullName: "",
+                    email,
+                    role,
+                    linkedinUrl: "",
+                    ctaSource: currentCtaSource,
+                    offer: "Public Launch Waitlist (€49/mo)",
+                    timestamp: new Date().toISOString()
+                };
+
+                try {
+                    await sendToFormspree(leadPayload);
+                } catch (err) {
+                    console.warn("Formspree waitlist error (lead still stored locally):", err);
+                } finally {
+                    recordLead(leadPayload);
+                }
+
+                wlConfirmedEmail.textContent = email;
+                waitlistFormView.classList.add("hidden");
+                waitlistSuccessView.classList.remove("hidden");
+                waitlistForm.reset();
+
+                wlSubmitBtn.disabled = false;
+                wlSubmitBtn.classList.remove("opacity-75", "cursor-not-allowed");
+                wlSubmitBtn.textContent = originalBtnText;
+            });
+
+            // -----------------------------------------------------------------
+            // Built-In Founder Validation Tracker (Ctrl+Shift+A or 5x Footer Click)
+            // -----------------------------------------------------------------
+            const trackerModal = document.getElementById("founder-tracker-modal");
+            const trackerBackdrop = document.getElementById("founder-tracker-backdrop");
+            const closeTrackerBtn = document.getElementById("close-founder-tracker");
+            const trackerTrigger = document.getElementById("founder-tracker-trigger");
+
+            const statusStripeBox = document.getElementById("status-stripe-box");
+            const statusFormspreeBox = document.getElementById("status-formspree-box");
+            const metricViews = document.getElementById("metric-views");
+            const metricOpens = document.getElementById("metric-opens");
+            const metricPreorders = document.getElementById("metric-preorders");
+            const metricWaitlist = document.getElementById("metric-waitlist");
+            const metricPreorderRate = document.getElementById("metric-preorder-rate");
+            const metricWaitlistRate = document.getElementById("metric-waitlist-rate");
+            const trackerLeadsTbody = document.getElementById("tracker-leads-tbody");
+            const trackerCopyCsvBtn = document.getElementById("tracker-copy-csv");
+            const trackerCopyFeedback = document.getElementById("tracker-copy-feedback");
+            const trackerResetBtn = document.getElementById("tracker-reset-data");
+
+            let resetConfirmPending = false;
+            let resetConfirmTimer = null;
+
+            function renderFounderTracker() {
+                // 1. Live Readiness Status Boxes
+                const hasStripe = (STRIPE_PAYMENT_LINK || "").trim().length > 0;
+                const hasFormspree = (FORMSPREE_ENDPOINT || "").trim().length > 0;
+
+                if (hasStripe) {
+                    statusStripeBox.className = "p-4 rounded-xl border bg-emeralddeep-soft border-emeralddeep-border text-emeralddeep text-xs";
+                    statusStripeBox.innerHTML = `
+                        <p class="font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emeralddeep"></span>
+                            Stripe Payment Link: Connected
+                        </p>
+                        <p class="mt-1 opacity-85 truncate">Redirects pre-orders with prefilled email.</p>
+                    `;
+                } else {
+                    statusStripeBox.className = "p-4 rounded-xl border bg-gold-soft border-gold-border text-gold text-xs";
+                    statusStripeBox.innerHTML = `
+                        <p class="font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                            Stripe Payment Link: Not Set
+                        </p>
+                        <p class="mt-1 text-stonebody">Paste your Stripe URL into <code class="font-mono font-semibold text-ink">STRIPE_PAYMENT_LINK</code> at the top of the &lt;script&gt; tag.</p>
+                    `;
+                }
+
+                if (hasFormspree) {
+                    statusFormspreeBox.className = "p-4 rounded-xl border bg-emeralddeep-soft border-emeralddeep-border text-emeralddeep text-xs";
+                    statusFormspreeBox.innerHTML = `
+                        <p class="font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emeralddeep"></span>
+                            Formspree Lead Capture: Connected
+                        </p>
+                        <p class="mt-1 opacity-85">Pre-orders &amp; waitlist leads sync to your inbox.</p>
+                    `;
+                } else {
+                    statusFormspreeBox.className = "p-4 rounded-xl border bg-gold-soft border-gold-border text-gold text-xs";
+                    statusFormspreeBox.innerHTML = `
+                        <p class="font-semibold flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                            Formspree Lead Capture: Not Set
+                        </p>
+                        <p class="mt-1 text-stonebody">Paste your Formspree endpoint into <code class="font-mono font-semibold text-ink">FORMSPREE_ENDPOINT</code> to save leads remotely.</p>
+                    `;
+                }
+
+                // 2. Funnel Metrics
+                const m = loadMetrics();
+                const preorders = m.leads.filter((l) => l.type === "founding_preorder");
+                const waitlists = m.leads.filter((l) => l.type === "waitlist");
+                const views = Math.max(m.pageViews, 1);
+
+                const preorderRate = ((preorders.length / views) * 100).toFixed(1);
+                const waitlistRate = ((waitlists.length / views) * 100).toFixed(1);
+
+                metricViews.textContent = String(m.pageViews);
+                metricOpens.textContent = String(m.modalOpens);
+                metricPreorders.textContent = String(preorders.length);
+                metricWaitlist.textContent = String(waitlists.length);
+                metricPreorderRate.textContent = `${preorderRate}%`;
+                metricWaitlistRate.textContent = `${waitlistRate}%`;
+
+                // 3. Leads Table
+                trackerLeadsTbody.innerHTML = "";
+                if (m.leads.length === 0) {
+                    const tr = document.createElement("tr");
+                    tr.innerHTML = `<td colspan="5" class="py-6 px-3 text-center text-stonebody">No leads recorded in this browser yet.</td>`;
+                    trackerLeadsTbody.appendChild(tr);
+                } else {
+                    m.leads.slice().reverse().forEach((lead) => {
+                        const tr = document.createElement("tr");
+                        tr.className = "hover:bg-paper/60";
+
+                        // Type badge cell
+                        const tdType = document.createElement("td");
+                        tdType.className = "py-2.5 px-3 whitespace-nowrap";
+                        const badge = document.createElement("span");
+                        if (lead.type === "founding_preorder") {
+                            badge.className = "inline-flex px-2 py-0.5 rounded-full text-[11px] font-semibold bg-emeralddeep-soft text-emeralddeep border border-emeralddeep-border";
+                            badge.textContent = "Pre-Order";
+                        } else {
+                            badge.className = "inline-flex px-2 py-0.5 rounded-full text-[11px] font-semibold bg-stone-100 text-stonebody border border-hairline";
+                            badge.textContent = "Waitlist";
+                        }
+                        tdType.appendChild(badge);
+
+                        // Details cell
+                        const tdDetails = document.createElement("td");
+                        tdDetails.className = "py-2.5 px-3";
+                        const primaryLine = document.createElement("p");
+                        primaryLine.className = "font-semibold text-ink";
+                        primaryLine.textContent = lead.fullName ? `${lead.fullName} (${lead.email})` : lead.email;
+                        tdDetails.appendChild(primaryLine);
+                        if (lead.linkedinUrl) {
+                            const subLine = document.createElement("p");
+                            subLine.className = "text-[11px] text-emeralddeep truncate max-w-[220px]";
+                            subLine.textContent = lead.linkedinUrl;
+                            tdDetails.appendChild(subLine);
+                        }
+
+                        // Role cell
+                        const tdRole = document.createElement("td");
+                        tdRole.className = "py-2.5 px-3 text-stonebody whitespace-nowrap";
+                        tdRole.textContent = lead.role || "—";
+
+                        // Source cell
+                        const tdSource = document.createElement("td");
+                        tdSource.className = "py-2.5 px-3 text-stonebody whitespace-nowrap";
+                        tdSource.textContent = lead.ctaSource || "direct";
+
+                        // Timestamp cell
+                        const tdTime = document.createElement("td");
+                        tdTime.className = "py-2.5 px-3 text-stonebody whitespace-nowrap";
+                        tdTime.textContent = lead.timestamp
+                            ? new Date(lead.timestamp).toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })
+                            : "—";
+
+                        tr.appendChild(tdType);
+                        tr.appendChild(tdDetails);
+                        tr.appendChild(tdRole);
+                        tr.appendChild(tdSource);
+                        tr.appendChild(tdTime);
+                        trackerLeadsTbody.appendChild(tr);
+                    });
+                }
+            }
+
+            function openFounderTracker() {
+                renderFounderTracker();
+                trackerModal.classList.remove("hidden");
+                trackerModal.classList.add("flex");
+                document.body.classList.add("overflow-hidden");
+            }
+
+            function closeFounderTracker() {
+                trackerModal.classList.add("hidden");
+                trackerModal.classList.remove("flex");
+                document.body.classList.remove("overflow-hidden");
+            }
+
+            // 5 Quick Clicks on Footer Copyright
+            let footerClicks = 0;
+            let footerClickTimer = null;
+            trackerTrigger.addEventListener("click", () => {
+                footerClicks += 1;
+                clearTimeout(footerClickTimer);
+                if (footerClicks >= 5) {
+                    footerClicks = 0;
+                    openFounderTracker();
+                } else {
+                    footerClickTimer = setTimeout(() => { footerClicks = 0; }, 1500);
+                }
+            });
+
+            // Keyboard Shortcuts: Ctrl+Shift+A opens tracker, Escape closes modals
+            document.addEventListener("keydown", (e) => {
+                if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "a") {
+                    e.preventDefault();
+                    openFounderTracker();
+                } else if (e.key === "Escape") {
+                    closeEnrollmentModal();
+                    closeFounderTracker();
+                }
+            });
+
+            closeTrackerBtn.addEventListener("click", closeFounderTracker);
+            trackerBackdrop.addEventListener("click", closeFounderTracker);
+
+            // Copy Leads as CSV using execCommand('copy') for iFrame reliability
+            trackerCopyCsvBtn.addEventListener("click", () => {
+                const m = loadMetrics();
+                const header = "type,fullName,email,role,linkedinUrl,ctaSource,timestamp";
+                const escapeCsv = (val) => `"${String(val || "").replace(/"/g, '""')}"`;
+                const rows = m.leads.map((l) => [
+                    escapeCsv(l.type),
+                    escapeCsv(l.fullName),
+                    escapeCsv(l.email),
+                    escapeCsv(l.role),
+                    escapeCsv(l.linkedinUrl),
+                    escapeCsv(l.ctaSource),
+                    escapeCsv(l.timestamp)
+                ].join(","));
+
+                const csvText = [header, ...rows].join("\n");
+                const tempInput = document.createElement("textarea");
+                tempInput.value = csvText;
+                tempInput.setAttribute("readonly", "");
+                tempInput.style.position = "absolute";
+                tempInput.style.left = "-9999px";
+                document.body.appendChild(tempInput);
+                tempInput.select();
+
+                try {
+                    document.execCommand("copy");
+                    trackerCopyFeedback.classList.remove("hidden");
+                    setTimeout(() => trackerCopyFeedback.classList.add("hidden"), 2500);
+                } catch (err) {
+                    console.warn("Clipboard copy failed:", err);
+                } finally {
+                    document.body.removeChild(tempInput);
+                }
+            });
+
+            // Two-click inline confirmation for Reset Test Data (avoids native confirm())
+            trackerResetBtn.addEventListener("click", () => {
+                if (!resetConfirmPending) {
+                    resetConfirmPending = true;
+                    trackerResetBtn.textContent = "Click Again to Confirm Reset";
+                    trackerResetBtn.classList.add("bg-red-600", "text-white", "border-red-600");
+                    trackerResetBtn.classList.remove("text-red-700");
+
+                    clearTimeout(resetConfirmTimer);
+                    resetConfirmTimer = setTimeout(() => {
+                        resetConfirmPending = false;
+                        trackerResetBtn.textContent = "Reset Test Data";
+                        trackerResetBtn.classList.remove("bg-red-600", "text-white", "border-red-600");
+                        trackerResetBtn.classList.add("text-red-700");
+                    }, 3500);
+                    return;
+                }
+
+                clearTimeout(resetConfirmTimer);
+                resetConfirmPending = false;
+                trackerResetBtn.textContent = "Reset Test Data";
+                trackerResetBtn.classList.remove("bg-red-600", "text-white", "border-red-600");
+                trackerResetBtn.classList.add("text-red-700");
+
+                saveMetrics({ pageViews: 0, modalOpens: 0, leads: [] });
+                renderFounderTracker();
+            });
+        });
+    </script>
+</body>
+</html>
