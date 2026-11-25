@@ -1104,7 +1104,7 @@
                         <!-- Dynamically set depending on whether STRIPE_PAYMENT_LINK is configured -->
                     </p>
 
-                    <!-- Fallback Direct Stripe Button (shown when STRIPE_PAYMENT_LINK is configured) -->
+                    <!-- Fallback Direct Stripe Button (shown when https://buy.stripe.com/fZu4gz3Rv3A78Nl4qq9EI0I is configured) -->
                     <a
                         id="po-stripe-direct-link"
                         href="#"
@@ -1320,8 +1320,8 @@
         /* =========================================================================
            EASY FOUNDER CONFIGURATION BLOCK (EDIT THESE 5 VALUES ONLY)
            ========================================================================= */
-        const STRIPE_PAYMENT_LINK = ""; // Paste your Stripe Payment Link URL here (e.g., https://buy.stripe.com/xxxx)
-        const FORMSPREE_ENDPOINT = "";  // Optional: Paste your Formspree URL to save pre-order & waitlist leads
+        const https://buy.stripe.com/fZu4gz3Rv3A78Nl4qq9EI0I = ""; // Paste your Stripe Payment Link URL here (e.g., https://buy.stripe.com/xxxx)
+        const https://formspree.io/f/myewopdv = "";  // Optional: Paste your Formspree URL to save pre-order & waitlist leads
         const FOUNDING_SPOTS_TOTAL = 20;
         const FOUNDING_SPOTS_REMAINING = 14; // Update manually as real spots fill
         const LAUNCH_DATE_LABEL = "30 Days from Enrollment";
@@ -1507,7 +1507,7 @@ Clean architecture is a tool for commercial speed, not an art project.`,
         }
 
         async function sendToFormspree(payload) {
-            const endpoint = (FORMSPREE_ENDPOINT || "").trim();
+            const endpoint = (https://formspree.io/f/myewopdv || "").trim();
             if (!endpoint) return { sent: false };
 
             const response = await fetch(endpoint, {
@@ -1824,8 +1824,8 @@ Clean architecture is a tool for commercial speed, not an art project.`,
                     recordLead(leadPayload);
                 }
 
-                // Check if STRIPE_PAYMENT_LINK is configured
-                const stripeCheckoutUrl = buildStripeCheckoutUrl(STRIPE_PAYMENT_LINK, email);
+                // Check if https://buy.stripe.com/fZu4gz3Rv3A78Nl4qq9EI0I is configured
+                const stripeCheckoutUrl = buildStripeCheckoutUrl(https://buy.stripe.com/fZu4gz3Rv3A78Nl4qq9EI0I, email);
 
                 if (stripeCheckoutUrl) {
                     // Connected Stripe Mode: open checkout cleanly + show confirmation with direct fallback link
@@ -1936,8 +1936,8 @@ Clean architecture is a tool for commercial speed, not an art project.`,
 
             function renderFounderTracker() {
                 // 1. Live Readiness Status Boxes
-                const hasStripe = (STRIPE_PAYMENT_LINK || "").trim().length > 0;
-                const hasFormspree = (FORMSPREE_ENDPOINT || "").trim().length > 0;
+                const hasStripe = (https://buy.stripe.com/fZu4gz3Rv3A78Nl4qq9EI0I || "").trim().length > 0;
+                const hasFormspree = (https://formspree.io/f/myewopdv || "").trim().length > 0;
 
                 if (hasStripe) {
                     statusStripeBox.className = "p-4 rounded-xl border bg-emeralddeep-soft border-emeralddeep-border text-emeralddeep text-xs";
@@ -1955,7 +1955,7 @@ Clean architecture is a tool for commercial speed, not an art project.`,
                             <span class="w-2 h-2 rounded-full bg-amber-600"></span>
                             Stripe Payment Link: Not Set
                         </p>
-                        <p class="mt-1 text-stonebody">Paste your Stripe URL into <code class="font-mono font-semibold text-ink">STRIPE_PAYMENT_LINK</code> at the top of the &lt;script&gt; tag.</p>
+                        <p class="mt-1 text-stonebody">Paste your Stripe URL into <code class="font-mono font-semibold text-ink">https://buy.stripe.com/fZu4gz3Rv3A78Nl4qq9EI0I</code> at the top of the &lt;script&gt; tag.</p>
                     `;
                 }
 
@@ -1975,7 +1975,7 @@ Clean architecture is a tool for commercial speed, not an art project.`,
                             <span class="w-2 h-2 rounded-full bg-amber-600"></span>
                             Formspree Lead Capture: Not Set
                         </p>
-                        <p class="mt-1 text-stonebody">Paste your Formspree endpoint into <code class="font-mono font-semibold text-ink">FORMSPREE_ENDPOINT</code> to save leads remotely.</p>
+                        <p class="mt-1 text-stonebody">Paste your Formspree endpoint into <code class="font-mono font-semibold text-ink">https://formspree.io/f/myewopdv</code> to save leads remotely.</p>
                     `;
                 }
 
